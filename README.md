@@ -1,6 +1,8 @@
 # VRShowroom
 
 # TODO
+0.) Mindestens ein Controller/Hand Model. Im Moment gibts noch gar nichts.
+
 1.) monitor mit slideshow
 
 2.) monitor mit film
