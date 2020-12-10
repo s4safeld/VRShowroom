@@ -60,7 +60,7 @@
      <Compile Include="Assets\InputDebugger.cs" />
      <Compile Include="Assets\InputManager.cs" />
      <Compile Include="Assets\mercedesBooth.cs" />
-     <Compile Include="Assets\temp.cs" />
+     <Compile Include="Assets\myController.cs" />
      <Compile Include="Assets\volvoBooth.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />

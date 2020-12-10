@@ -10,7 +10,7 @@
         <e p="InputDebugger.cs" t="Include" />
         <e p="InputManager.cs" t="Include" />
         <e p="mercedesBooth.cs" t="Include" />
-        <e p="temp.cs" t="Include" />
+        <e p="myController.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />

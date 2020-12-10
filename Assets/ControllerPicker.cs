@@ -23,14 +23,14 @@ public class ControllerPicker : MonoBehaviour {
     void Update()
     {
         if (foreignCollider != null) {
-            if (inputManager.triggerButtonPressed(XRNode.LeftHand) && foreignCollider.name.Contains("eft")) {
+            if (inputManager.TriggerButtonPressed('l') && foreignCollider.name.Contains("eft")) {
                 Destroy(foreignCollider.transform.GetChild(1).GetChild(0));
                 Instantiate(gameObject, Vector3.zero
                     , Quaternion.identity, foreignCollider.transform.GetChild(1).GetChild(0));
                 //foreignCollider.transform.GetChild(1).GetChild(0).transform = transform;
             }
 
-            if (inputManager.triggerButtonPressed(XRNode.RightHand) && foreignCollider.name.Contains("ight")) {
+            if (inputManager.TriggerButtonPressed('r') && foreignCollider.name.Contains("ight")) {
                 Destroy(foreignCollider.transform.GetChild(1).GetChild(0));
                 Instantiate(gameObject, Vector3.zero
                     , Quaternion.identity, foreignCollider.transform.GetChild(1).GetChild(0));
