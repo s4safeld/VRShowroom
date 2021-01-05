@@ -52,6 +52,7 @@ public class InputManager : MonoBehaviour {
     public bool TriggerButtonPressed(char hand) {
         switch (hand) {
             case 'l': {
+                Debug.Log("here");
                 return (DeviceLeft.TryGetFeatureValue(CommonUsages.triggerButton, out bool value) && value);
             }
             case 'r': {
