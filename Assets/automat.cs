@@ -15,18 +15,19 @@ public class automat : MonoBehaviour {
     public void explode() {
         if (disabled) return;
         if (!exploded) {
+            //transform.position += new Vector3(0,1,-1);
             foreach (Transform child in transform) {
                 child.localPosition *= explosionValue;
             }
             exploded = true;
         }
         else {
+            //transform.position -= new Vector3(0, 1, -1);
             foreach (Transform child in transform) {
                 child.localPosition /= explosionValue;
             }
             exploded = false;
         }
-
         StartCoroutine(WaitForMilliseconds(100));
     }
 
@@ -45,15 +46,8 @@ public class automat : MonoBehaviour {
     }
 
     IEnumerator WaitForMilliseconds(float time) {
-        //Print the time of when the function is first called.
-        Debug.Log("Started Coroutine at timestamp : " + Time.time);
-
-        //yield on a new YieldInstruction that waits for 5 seconds.
         disabled = true;
         yield return new WaitForSeconds(time/1000);
         disabled = false;
-
-        //After we have waited 5 seconds print the time again.
-        Debug.Log("Finished Coroutine at timestamp : " + Time.time);
     }
 }

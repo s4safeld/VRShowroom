@@ -1,33 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf7a37c3-48de-449f-825d-78ccc1bde406" name="Default Changelist" comment="" />
+    <list default="true" id="bf7a37c3-48de-449f-825d-78ccc1bde406" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Remote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Remote.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/automat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/automat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/mercedesRemote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/mercedesRemote.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/automat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/automatRemote.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/Controllers/ActionBasedController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/myController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Remote.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/Interactors/XRRayInteractor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/Interactables/XRGrabInteractable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ControllerStorage.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/automat.cs" />
         <option value="$PROJECT_DIR$/Assets/MyInputManager.cs" />
         <option value="$PROJECT_DIR$/Assets/MercedesBooth.cs" />
         <option value="$PROJECT_DIR$/Assets/VolvoBooth.cs" />
         <option value="$PROJECT_DIR$/Assets/MercedesPodium.cs" />
-        <option value="$PROJECT_DIR$/Assets/mercedesRemote.cs" />
         <option value="$PROJECT_DIR$/Assets/automatRemote.cs" />
+        <option value="$PROJECT_DIR$/Assets/automat.cs" />
+        <option value="$PROJECT_DIR$/Assets/mercedesRemote.cs" />
+        <option value="$PROJECT_DIR$/Assets/myController.cs" />
         <option value="$PROJECT_DIR$/Assets/Remote.cs" />
+        <option value="$PROJECT_DIR$/Assets/ControllerStorage.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1mWBRSw3pYLEv2hjWDHMQvvV6dN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -77,6 +104,7 @@
       <workItem from="1609599460226" duration="5000" />
       <workItem from="1609599549282" duration="6875000" />
       <workItem from="1609677715432" duration="3644000" />
+      <workItem from="1609766517885" duration="7837000" />
     </task>
     <servers />
   </component>
@@ -85,7 +113,28 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="936" y="330" key="run.anything.popup" timestamp="1609773149881">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="936" y="330" key="run.anything.popup/0.0.2560.1400/2560.351.1920.1040@0.0.2560.1400" timestamp="1609773149881" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1609773988976">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.351.1920.1040@0.0.2560.1400" timestamp="1609773988976" />
   </component>
 </project>

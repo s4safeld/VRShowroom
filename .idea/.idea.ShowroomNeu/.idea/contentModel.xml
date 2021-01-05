@@ -8,8 +8,10 @@
       <e p="Assets" t="Include">
         <e p="automat.cs" t="Include" />
         <e p="automatRemote.cs" t="Include" />
+        <e p="ControllerStorage.cs" t="Include" />
         <e p="MercedesPodium.cs" t="Include" />
         <e p="mercedesRemote.cs" t="Include" />
+        <e p="myController.cs" t="Include" />
         <e p="MyInputManager.cs" t="Include" />
         <e p="Remote.cs" t="Include" />
         <e p="Scripts" t="Include">
