@@ -4,19 +4,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using System.Linq;
+using UnityEngine.Serialization;
 
 public class Remote : MonoBehaviour {
     public bool grabbed = false;
-    private MyInputManager mim;
+    private MyInputManager _mim;
     public Transform currHand;
-    public Vector3 holdingPosition;
+    public Vector3 holdingRotation;
     public float grabbingDistance = 1;
     public SphereCollider controllerHolster;
 
     private float rotationFunctionSpeedFromParent = 0;
 
     void Start() {
-        mim = FindObjectOfType<MyInputManager>();
+        _mim = FindObjectOfType<MyInputManager>();
     }
 
     void Update() {
@@ -27,30 +28,30 @@ public class Remote : MonoBehaviour {
         //    Debug.Log(mim.GripValue('r'));
         //Debug.Log(name+", grabbed: "+grabbed);
 
-        if (!grabbed && mim.GripValue('l') > 0) {
-            if (Vector3.Distance(transform.position, mim.leftHandController.position) < grabbingDistance) {
-                Debug.Log("here");
+        if (!grabbed && _mim.GripValue('l') > 0) {
+            if (Vector3.Distance(transform.position, _mim.leftHandController.position) < grabbingDistance) {
                 grabbed = true;
-                transform.eulerAngles = holdingPosition;
-                currHand = mim.leftHandController;
+                transform.eulerAngles = holdingRotation;
+                currHand = _mim.leftHandController;
                 currHand.GetComponent<myController>().grabbedSomething = true;
                 ToggleRotationFunctionalityFromParent();
             }
         }
 
-        if (!grabbed && mim.GripValue('r') > 0) {
-            if (Vector3.Distance(transform.position, mim.rightHandController.position) < grabbingDistance) {
+        if (!grabbed && _mim.GripValue('r') > 0) {
+            if (Vector3.Distance(transform.position, _mim.rightHandController.position) < grabbingDistance) {
                 grabbed = true;
-                transform.eulerAngles = holdingPosition;
-                currHand = mim.rightHandController;
+                transform.eulerAngles = holdingRotation;
+                currHand = _mim.rightHandController;
                 currHand.GetComponent<myController>().grabbedSomething = true;
                 ToggleRotationFunctionalityFromParent();
             }
         }
 
         if (grabbed) {
-            if (currHand == mim.rightHandController) {
-                if (mim.GripValue('r') == 0) {
+
+            if (currHand == _mim.rightHandController) {
+                if (_mim.GripValue('r') == 0) {
                     grabbed = false;
                     ToggleRotationFunctionalityFromParent();
                     if (Vector3.Distance(controllerHolster.center, transform.position) < controllerHolster.radius) {
@@ -64,8 +65,8 @@ public class Remote : MonoBehaviour {
                 }
                     
             }
-            if(currHand == mim.leftHandController){
-                if (mim.GripValue('l') == 0) {
+            if(currHand == _mim.leftHandController){
+                if (_mim.GripValue('l') == 0) {
                     grabbed = false; 
                     ToggleRotationFunctionalityFromParent();
                     if (Vector3.Distance(controllerHolster.center, transform.position) < controllerHolster.radius) {
@@ -83,7 +84,7 @@ public class Remote : MonoBehaviour {
 
     void ToggleRotationFunctionalityFromParent() {
         try {
-            XRRayInteractor xrRayInteractor = GetComponentInParent<XRRayInteractor>();
+            XRRayInteractor xrRayInteractor = currHand.GetComponentInParent<XRRayInteractor>();
             if (xrRayInteractor.rotateSpeed > 0) {
                 if (rotationFunctionSpeedFromParent == 0)
                     rotationFunctionSpeedFromParent = xrRayInteractor.rotateSpeed;
