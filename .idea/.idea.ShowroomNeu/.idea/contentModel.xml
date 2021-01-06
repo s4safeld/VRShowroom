@@ -6,19 +6,23 @@
     <e p="F:\UnityProjets\ShowroomBejoynt\Showroom\UnityProjektNeu\ShowroomNeu" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="automat.cs" t="Include" />
-        <e p="automatRemote.cs" t="Include" />
-        <e p="ControllerStorage.cs" t="Include" />
-        <e p="MercedesPodium.cs" t="Include" />
-        <e p="mercedesRemote.cs" t="Include" />
-        <e p="myController.cs" t="Include" />
-        <e p="MyInputManager.cs" t="Include" />
-        <e p="Remote.cs" t="Include" />
+        <e p="ControllerHolster.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ActionBasedControllerManager.cs" t="Include" />
           <e p="BubbleGun.cs" t="Include" />
           <e p="ComplexCube.cs" t="Include" />
           <e p="ControllerManager.cs" t="Include" />
+          <e p="CustomScripts" t="Include">
+            <e p="automat.cs" t="Include" />
+            <e p="automatRemote.cs" t="Include" />
+            <e p="ControllerStorage.cs" t="Include" />
+            <e p="MercedesPodium.cs" t="Include" />
+            <e p="mercedesRemote.cs" t="Include" />
+            <e p="myController.cs" t="Include" />
+            <e p="MyInputManager.cs" t="Include" />
+            <e p="Remote.cs" t="Include" />
+            <e p="VolvoPodium.cs" t="Include" />
+          </e>
           <e p="LocomotionConfigurationMenu.cs" t="Include" />
           <e p="LocomotionSchemeManager.cs" t="Include" />
           <e p="UpdateControlText.cs" t="Include" />
@@ -57,7 +61,6 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
-        <e p="VolvoBooth.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

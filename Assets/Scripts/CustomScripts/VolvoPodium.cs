@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VolvoBooth : MonoBehaviour
+public class VolvoPodium : MonoBehaviour
 {
     public bool rotate = true;
     public float rotationSpeed = 1f;
-    public bool paused = false;
 
     void Update() {
-        if(!paused)
+        if(rotate)
             transform.Rotate(new Vector3(0f, rotationSpeed, 0f) * Time.deltaTime);
     }
 }
