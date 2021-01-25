@@ -22,6 +22,12 @@ public class automatRemote : MonoBehaviour {
                     device.GetComponent<automat>().explode();
                 }
             }
+
+            if (remote.currHand == mim.rightHandController) {
+                if (mim.Primary2DAxisClick('r')) {
+                    device.GetComponent<automat>().explode();
+                }
+            }
         }
     }
 

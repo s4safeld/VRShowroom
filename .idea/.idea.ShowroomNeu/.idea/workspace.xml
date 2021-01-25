@@ -12,30 +12,22 @@
   <component name="ChangeListManager">
     <list default="true" id="bf7a37c3-48de-449f-825d-78ccc1bde406" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ControllerStorage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ControllerStorage.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MercedesPodium.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MercedesPodium.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Volvo/FBX/volvo.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Volvo/FBX/volvo.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyInputManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyInputManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/XRRigDemo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/XRRigDemo.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Remote.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Remote.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ControllerHolster.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ControllerHolster.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VolvoBooth.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VolvoBooth.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/automat.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/automat.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/automatRemote.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/automatRemote.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/mercedesRemote.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/mercedesRemote.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/myController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/myController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Remote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Remote.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/automatRemote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/automatRemote.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/mercedesRemote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/mercedesRemote.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +40,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/Controllers/ActionBasedController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/Interactors/XRRayInteractor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ControllerHolster.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/Interactables/XRGrabInteractable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Inputs/InputActionManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -65,7 +57,12 @@
         <option value="$PROJECT_DIR$/Assets/ControllerStorage.cs" />
         <option value="$PROJECT_DIR$/Assets/VolvoBooth.cs" />
         <option value="$PROJECT_DIR$/Assets/ControllerHolster.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/mercedesRemote.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/ControllerHolster.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Remote.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/automatRemote.cs" />
+        <option value="$PROJECT_DIR$/Assets/Hover.cs" />
       </list>
     </option>
   </component>
@@ -122,6 +119,10 @@
       <workItem from="1609677715432" duration="3644000" />
       <workItem from="1609766517885" duration="7837000" />
       <workItem from="1609930004779" duration="2474000" />
+      <workItem from="1610123469589" duration="994000" />
+      <workItem from="1611221353170" duration="2063000" />
+      <workItem from="1611232243828" duration="4645000" />
+      <workItem from="1611312750466" duration="5196000" />
     </task>
     <servers />
   </component>

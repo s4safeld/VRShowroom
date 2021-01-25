@@ -46,6 +46,15 @@ public class MyInputManager : MonoBehaviour
         if (!DeviceRight.isValid) {
             GetRightDevice();
         }
+
+        #if UNITY_ANDROID
+            Debug.Log("on android platform");
+        #endif
+        
+        #if !UNITY_ANDROID
+            Debug.Log("not on Android Platform");
+        #endif
+        
     }
     
     //consult the following link to see what each Button does for each Platform

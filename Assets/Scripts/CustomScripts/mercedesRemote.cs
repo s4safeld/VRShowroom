@@ -55,15 +55,24 @@ public class mercedesRemote : MonoBehaviour
                     mercedesPodium.rotate = !mercedesPodium.rotate;
                     StartCoroutine(WaitForMilliseconds(100));
                 }
+
                 if (primary2DAxis.y < 0 && primary2DAxis.x <= 0) {
-                    mercedesPodium.rotate = false;
-                    device.transform.Rotate(new Vector3(0f, -mercedesPodium.rotationSpeed, 0f) * Time.deltaTime);
-                    mercedesPodium.rotate = true;
+                    if (mercedesPodium.rotate) {
+                        device.transform.Rotate(new Vector3(0f, -mercedesPodium.rotationSpeed * 2, 0f) *
+                                                Time.deltaTime);
+                    }
+                    else {
+                        device.transform.Rotate(new Vector3(0f, -mercedesPodium.rotationSpeed, 0f) * Time.deltaTime);
+                    }
                 }
+
                 if (primary2DAxis.y < 0 && primary2DAxis.x > 0) {
-                    mercedesPodium.rotate = false;
-                    device.transform.Rotate(new Vector3(0f, mercedesPodium.rotationSpeed, 0f) * Time.deltaTime);
-                    mercedesPodium.rotate = true;
+                    if (mercedesPodium.rotate) {
+                        device.transform.Rotate(new Vector3(0f, mercedesPodium.rotationSpeed / 2, 0f) * Time.deltaTime);
+                    }
+                    else {
+                        device.transform.Rotate(new Vector3(0f, mercedesPodium.rotationSpeed, 0f) * Time.deltaTime);
+                    }
                 }
             }
         }
