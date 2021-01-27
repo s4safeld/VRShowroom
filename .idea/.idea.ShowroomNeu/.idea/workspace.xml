@@ -14,20 +14,17 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ControllerHolster.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ControllerHolster.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hover.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hover.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Mercedes/Materials/d_glass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Mercedes/Materials/d_glass.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Remote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Remote.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/automatRemote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/automatRemote.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/mercedesRemote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/mercedesRemote.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/UnityCrashHandler64.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Build/UnityCrashHandler64.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/UnityPlayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Build/UnityPlayer.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +36,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/Controllers/ActionBasedController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PlayPauseButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/Interactors/XRRayInteractor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/Interactables/XRGrabInteractable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Inputs/InputActionManager.cs" root0="SKIP_HIGHLIGHTING" />
@@ -57,12 +55,14 @@
         <option value="$PROJECT_DIR$/Assets/ControllerStorage.cs" />
         <option value="$PROJECT_DIR$/Assets/VolvoBooth.cs" />
         <option value="$PROJECT_DIR$/Assets/ControllerHolster.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/mercedesRemote.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/ControllerHolster.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Remote.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/automatRemote.cs" />
         <option value="$PROJECT_DIR$/Assets/Hover.cs" />
+        <option value="$PROJECT_DIR$/Assets/TVButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/PlayPauseButton.cs" />
       </list>
     </option>
   </component>
@@ -123,6 +123,7 @@
       <workItem from="1611221353170" duration="2063000" />
       <workItem from="1611232243828" duration="4645000" />
       <workItem from="1611312750466" duration="5196000" />
+      <workItem from="1611766409272" duration="5272000" />
     </task>
     <servers />
   </component>

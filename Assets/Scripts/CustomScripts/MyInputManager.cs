@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class MyInputManager : MonoBehaviour
 {
@@ -15,15 +16,42 @@ public class MyInputManager : MonoBehaviour
 
     public InputDevice DeviceLeft;
     public InputDevice DeviceRight;
+    public float grabbingRange;
+
+    public ArrayList xrRayInteractors;
 
     public Transform leftHandController;
     public Transform rightHandController;
+    
+    public bool InRange(Vector3 input, char side) {
+        if (side == 'l') {
+            return Vector3.Distance(leftHandController.position,input) < grabbingRange;
+        }
+        if (side == 'r') {
+            return Vector3.Distance(rightHandController.position, input) < grabbingRange;
+        }
+        return Vector3.Distance(leftHandController.position, input) < grabbingRange ||
+               Vector3.Distance(rightHandController.position, input) < grabbingRange;
+    }
+
+    public bool HoveredByRayInteractor(Collider col) {
+        foreach (XRRayInteractor xri in xrRayInteractors) {
+            if (xri.enabled) {
+                if (xri.GetCurrentRaycastHit(out RaycastHit raycastHit)) {
+                    if (raycastHit.collider == col)
+                        return true;
+                }
+            }
+        }
+
+        return false;
+    }
 
     private void GetLeftDevice() {
         InputDevices.GetDevicesAtXRNode(leftHand, devicesLeft);
         DeviceLeft = devicesLeft.FirstOrDefault();
-
     }
+    
     private void GetRightDevice() {
         InputDevices.GetDevicesAtXRNode(rightHand, devicesRight);
         DeviceRight = devicesRight.FirstOrDefault();
@@ -35,6 +63,11 @@ public class MyInputManager : MonoBehaviour
         }
         if (!DeviceRight.isValid) {
             GetRightDevice();
+        }
+        
+        xrRayInteractors = new ArrayList();
+        foreach (XRRayInteractor xri in FindObjectsOfType<XRRayInteractor>()) {
+            xrRayInteractors.Add(xri);
         }
     }
 
@@ -48,11 +81,11 @@ public class MyInputManager : MonoBehaviour
         }
 
         #if UNITY_ANDROID
-            Debug.Log("on android platform");
+            //Debug.Log("on android platform");
         #endif
         
         #if !UNITY_ANDROID
-            Debug.Log("not on Android Platform");
+            //Debug.Log("not on Android Platform");
         #endif
         
     }
