@@ -16,14 +16,13 @@ public class MyInputManager : MonoBehaviour
 
     public InputDevice DeviceLeft;
     public InputDevice DeviceRight;
-    public float grabbingRange;
 
     public ArrayList xrRayInteractors;
 
     public Transform leftHandController;
     public Transform rightHandController;
     
-    public bool InRange(Vector3 input, char side) {
+    public bool InRange(Vector3 input, char side, float grabbingRange) {
         if (side == 'l') {
             return Vector3.Distance(leftHandController.position,input) < grabbingRange;
         }

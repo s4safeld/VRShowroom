@@ -9,7 +9,10 @@ public class TVButton : MonoBehaviour {
     public bool selected = false;
     public AnimationClip SelectAnimation;
     public AnimationClip DeselectAnimation;
+    public float grabbingRange = 0.2f;
     private Collider _collider;
+
+    public bool listenForRaycast;
 
     private MyInputManager mim;
 
@@ -19,7 +22,8 @@ public class TVButton : MonoBehaviour {
     }
 
     private void Update() {
-        if (mim.InRange(transform.position, 'a') || mim.HoveredByRayInteractor(_collider)) {
+        if (mim.InRange(transform.position, 'a', grabbingRange) 
+            || (listenForRaycast && mim.HoveredByRayInteractor(_collider))) {
             Select(selected = true);
         }
         else {
@@ -31,13 +35,16 @@ public class TVButton : MonoBehaviour {
         foreach (Light light in GetComponentsInChildren<Light>()) {
             light.enabled = input;
         }
-        if (input) {
-            //GetComponent<Animation>().Play("ButtonAnimationSelect");
-            GetComponent<Animator>().Play(SelectAnimation.name);
-        }
-        else {
-           // GetComponent<Animation>().Play("ButtonAnimationDeselect");
-           GetComponent<Animator>().Play(DeselectAnimation.name);
-        }
+
+        try {
+            if (input) {
+                //GetComponent<Animation>().Play("ButtonAnimationSelect");
+                GetComponent<Animator>().Play(SelectAnimation.name);
+            }
+            else {
+                // GetComponent<Animation>().Play("ButtonAnimationDeselect");
+                GetComponent<Animator>().Play(DeselectAnimation.name);
+            }
+        }catch (Exception e) { }
     }
 }

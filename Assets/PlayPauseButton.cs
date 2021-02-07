@@ -37,7 +37,7 @@ public class PlayPauseButton : MonoBehaviour {
     }
 
     IEnumerator WaitForMilliseconds(float time) {
-        this.enabled = false;
+        enabled = false;
         yield return new WaitForSeconds(time / 1000);
         enabled = true;
     }
