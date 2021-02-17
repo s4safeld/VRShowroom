@@ -14,18 +14,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BaseGeometry/Shoe cartons/TEXTUR/1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BaseGeometry/Shoe cartons/TEXTUR/1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ButtonAnimationDeselect.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ButtonAnimationDeselect.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ButtonAnimationSelect.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ButtonAnimationSelect.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayPauseButton.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayPauseButton.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayPauseButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayPauseButton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TVButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TVButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +30,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/Controllers/ActionBasedController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VIPArea.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/RewindButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MuteButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/Interactors/XRRayInteractor.cs" root0="SKIP_HIGHLIGHTING" />
@@ -68,9 +62,11 @@
         <option value="$PROJECT_DIR$/Assets/RewindButton.cs" />
         <option value="$PROJECT_DIR$/Assets/PageFlipper.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/TVButton.cs" />
         <option value="$PROJECT_DIR$/Assets/MuteButton.cs" />
         <option value="$PROJECT_DIR$/Assets/FastForwardButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/TVButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/numPadButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/VIPArea.cs" />
       </list>
     </option>
   </component>
@@ -138,6 +134,7 @@
       <workItem from="1611829934588" duration="6991000" />
       <workItem from="1611840217524" duration="1412000" />
       <workItem from="1612701583054" duration="1552000" />
+      <workItem from="1613570322207" duration="2644000" />
     </task>
     <servers />
   </component>
@@ -246,9 +243,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="936" y="330" key="run.anything.popup/0.0.2560.1400/2560.351.1920.1040@0.0.2560.1400" timestamp="1609773149881" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1609773988976">
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1613570405066">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.351.1920.1040@0.0.2560.1400" timestamp="1609773988976" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.357.1920.1040/-1080.-481.1080.1880@0.0.2560.1400" timestamp="1613570405066" />
   </component>
 </project>
