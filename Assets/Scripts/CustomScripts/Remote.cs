@@ -48,11 +48,11 @@ public class Remote : MonoBehaviour {
             if (currHand == _mim.rightHandController) {
                 if (_mim.GripValue('r') == 0) {
                     grabbed = false;
-                    if (controllerHolster.isInside(GetComponent<Collider>())) {
+                    /*if (controllerHolster.isInside(GetComponent<Collider>())) {
                         controllerHolster.GetComponent<AudioSource>().Play();
                         ControllerStorage.storage.Add(gameObject);
                         transform.position -= new Vector3(0,-100,0);
-                    }
+                    }*/
 
                     currHand.GetComponent<myController>().grabbedSomething = false;
                     currHand = null;
@@ -62,11 +62,11 @@ public class Remote : MonoBehaviour {
             if(currHand == _mim.leftHandController){
                 if (_mim.GripValue('l') == 0) {
                     grabbed = false;
-                    if (controllerHolster.isInside(GetComponent<Collider>())) {
+                    /*if (controllerHolster.isInside(GetComponent<Collider>())) {
                         controllerHolster.GetComponent<AudioSource>().Play();
                         ControllerStorage.storage.Add(gameObject);
                         transform.position -= new Vector3(0, -100, 0);
-                    }
+                    }*/
 
                     currHand.GetComponent<myController>().grabbedSomething = false;
                     currHand = null;

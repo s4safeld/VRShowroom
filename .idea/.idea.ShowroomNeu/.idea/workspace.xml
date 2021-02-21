@@ -11,14 +11,169 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf7a37c3-48de-449f-825d-78ccc1bde406" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/ButtonSelector.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/ButtonSelector.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/Bonnet.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/Bonnet.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/CloseBonnet.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/CloseBonnet.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/CloseLeftDoor.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/CloseLeftDoor.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/CloseRightDoor.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/CloseRightDoor.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/CloseTrunk.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/CloseTrunk.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/Door_left.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/Door_left.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/Door_right.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/Door_right.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/OpenBonnet.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/OpenBonnet.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/OpenLeftDoor.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/OpenLeftDoor.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/OpenRightDoor.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/OpenRightDoor.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/OpenTrunk.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/OpenTrunk.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/Trunk.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/Mercedes/Trunk.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/DeselectFastForwardButton.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/DeselectFastForwardButton.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/DeselectMuteButton.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/DeselectMuteButton.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/DeselectPlayPauseButton.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/DeselectPlayPauseButton.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/DeselectRewindButton.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/DeselectRewindButton.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/FastForwardButton.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/FastForwardButton.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/MuteButton.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/MuteButton.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/PlayPauseButton.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/PlayPauseButton.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/RewindButton.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/RewindButton.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/SelectFastForwardButton.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/SelectFastForwardButton.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/SelectMuteButton.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/SelectMuteButton.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/SelectPlayPauseButton.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/SelectPlayPauseButton.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/SelectRewindButton.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animation/TV/SelectRewindButton.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RotateObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RotateObject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/AutomatBooth.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/AutomatBooth/automat.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/AutomatBooth/automat.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/AutomatBooth/automatRemote.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/AutomatBooth/automatRemote.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Deprecated.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Deprecated/ControllerHolster.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Deprecated/ControllerHolster.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Deprecated/ControllerStorage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Deprecated/ControllerStorage.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Deprecated/RewindButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Deprecated/RewindButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Deprecated/myController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Deprecated/myController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/MercedesPodium.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/MercedesPodium.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/PageFlipper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/PageFlipper.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/RotateObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/RotateObject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/mercedesRemote.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/mercedesRemote.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/FastForwardButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/FastForwardButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/MuteButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/MuteButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/PlayPauseButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/PlayPauseButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VIPArea.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VIPArea/VIPArea.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VIPArea/VIPArea.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VIPArea/numPadButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VIPArea/numPadButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VolvoBooth.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VolvoBooth/VolvoPodium.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VolvoBooth/VolvoPodium.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShowroomNeu/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ButtonSelector.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ButtonSelector.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DeselectFastForwardButton.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DeselectFastForwardButton.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DeselectMuteButton.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DeselectMuteButton.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DeselectPlayPauseButton.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DeselectPlayPauseButton.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DeselectRewindButton.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DeselectRewindButton.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FastForwardButton.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FastForwardButton.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FastForwardButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FastForwardButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MuteButton.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MuteButton.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MuteButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MuteButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PageFlipper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PageFlipper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayPauseButton.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayPauseButton.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayPauseButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayPauseButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RewindButton.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RewindButton.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RewindButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RewindButton.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/ControllerHolster.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/ControllerHolster.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/ControllerStorage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/ControllerStorage.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesPodium.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesPodium.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Remote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Remote.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VolvoPodium.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VolvoPodium.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/automat.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/automat.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/automatRemote.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/automatRemote.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/mercedesRemote.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/mercedesRemote.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/myController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/myController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SelectFastForwardButton.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SelectFastForwardButton.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SelectMuteButton.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SelectMuteButton.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SelectPlayPauseButton.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SelectPlayPauseButton.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SelectRewindButton.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SelectRewindButton.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TVButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TVButton.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VIPArea.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VIPArea.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/numPadButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/numPadButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +185,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/Controllers/ActionBasedController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/VIPArea.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/RewindButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/MuteButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RotateObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/Interactors/XRRayInteractor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/FastForwardButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/PageFlipper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/Interactables/XRGrabInteractable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Inputs/InputActionManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -54,35 +205,48 @@
         <option value="$PROJECT_DIR$/Assets/VolvoBooth.cs" />
         <option value="$PROJECT_DIR$/Assets/ControllerHolster.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/mercedesRemote.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/ControllerHolster.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Remote.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/automatRemote.cs" />
         <option value="$PROJECT_DIR$/Assets/Hover.cs" />
         <option value="$PROJECT_DIR$/Assets/PlayPauseButton.cs" />
         <option value="$PROJECT_DIR$/Assets/RewindButton.cs" />
         <option value="$PROJECT_DIR$/Assets/PageFlipper.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" />
         <option value="$PROJECT_DIR$/Assets/MuteButton.cs" />
         <option value="$PROJECT_DIR$/Assets/FastForwardButton.cs" />
         <option value="$PROJECT_DIR$/Assets/TVButton.cs" />
         <option value="$PROJECT_DIR$/Assets/numPadButton.cs" />
         <option value="$PROJECT_DIR$/Assets/VIPArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/numPadButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VIPArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Remote.cs" />
+        <option value="$PROJECT_DIR$/Assets/RotateObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesPodium.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/ControllerHolster.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/ControllerStorage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/myController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/RewindButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/RotateObject.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1mWBRSw3pYLEv2hjWDHMQvvV6dN" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34995976" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30008045" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="XThreadsFramesViewSplitterKey" value="0.50057536" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
@@ -134,7 +298,10 @@
       <workItem from="1611829934588" duration="6991000" />
       <workItem from="1611840217524" duration="1412000" />
       <workItem from="1612701583054" duration="1552000" />
-      <workItem from="1613570322207" duration="2644000" />
+      <workItem from="1613570322207" duration="3380000" />
+      <workItem from="1613650019773" duration="1071000" />
+      <workItem from="1613902775712" duration="166000" />
+      <workItem from="1613903352009" duration="10217000" />
     </task>
     <servers />
   </component>
@@ -156,6 +323,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -239,9 +407,10 @@
     </state>
     <state width="1877" height="29" key="GridCell.Tab.3.right/0.0.2560.1400/2560.357.1920.1040/-1080.-481.1080.1880@0.0.2560.1400" timestamp="1611839195790" />
     <state width="1877" height="29" key="GridCell.Tab.3.right/0.0.2560.1400/2560.357.1920.1040/-1080.-481.1080.1880@2560.357.1920.1040" timestamp="1611834304566" />
-    <state x="936" y="330" key="run.anything.popup" timestamp="1609773149881">
+    <state x="936" y="330" key="run.anything.popup" timestamp="1613915831474">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="936" y="330" key="run.anything.popup/-1080.-481.1080.1880/2560.357.1920.1040/0.0.2560.1400@0.0.2560.1400" timestamp="1613915831474" />
     <state x="936" y="330" key="run.anything.popup/0.0.2560.1400/2560.351.1920.1040@0.0.2560.1400" timestamp="1609773149881" />
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1613570405066">
       <screen x="0" y="0" width="2560" height="1400" />

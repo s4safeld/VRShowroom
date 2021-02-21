@@ -37,8 +37,9 @@ public class MyInputManager : MonoBehaviour
         foreach (XRRayInteractor xri in xrRayInteractors) {
             if (xri.enabled) {
                 if (xri.GetCurrentRaycastHit(out RaycastHit raycastHit)) {
-                    if (raycastHit.collider == col)
+                    if (raycastHit.collider == col) {
                         return true;
+                    }
                 }
             }
         }
@@ -119,21 +120,6 @@ public class MyInputManager : MonoBehaviour
                 Debug.LogError(
                     "Something went wrong in InputManager.gripValue(), controller seems to be neither right or left");
                 return 0.0f;
-        }
-    }
-
-    public bool ThumbrestPressed(char hand) {
-        switch (hand) {
-            case 'l': {
-                return (DeviceLeft.TryGetFeatureValue(CommonUsages.thumbrest, out bool value) && value);
-            }
-            case 'r': {
-                return (DeviceRight.TryGetFeatureValue(CommonUsages.thumbrest, out bool value) && value);
-            }
-            default:
-                Debug.LogError(
-                    "Something went wrong in InputManager.thumbrestPressed(), controller seems to be neither right nor left");
-                return false;
         }
     }
 
@@ -243,25 +229,6 @@ public class MyInputManager : MonoBehaviour
                 Debug.LogError(
                     "Something went wrong in InputManager.Primary2DAxisClick(), controller seems to be neither right nor left");
                 return false;
-        }
-    }
-
-    public Vector2 dPad(char hand) {
-        switch (hand) {
-            case 'l': {
-                return DeviceLeft.TryGetFeatureValue(CommonUsages.dPad, out Vector2 value)
-                    ? value
-                    : Vector2.zero;
-            }
-            case 'r': {
-                return DeviceRight.TryGetFeatureValue(CommonUsages.dPad, out Vector2 value)
-                    ? value
-                    : Vector2.zero;
-            }
-            default:
-                Debug.LogError(
-                    "Something went wrong in InputManager.dPad(), controller seems to be neither right nor left");
-                return Vector2.zero;
         }
     }
 
