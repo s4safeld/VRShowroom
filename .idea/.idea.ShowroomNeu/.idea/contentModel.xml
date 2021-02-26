@@ -6,7 +6,9 @@
     <e p="F:\UnityProjets\ShowroomBejoynt\Showroom\UnityProjektNeu\ShowroomNeu" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="RotateObject.cs" t="Include" />
+        <e p="cup.cs" t="Include" />
+        <e p="dispenseCoffee.cs" t="Include" />
+        <e p="FunctionCube.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ActionBasedControllerManager.cs" t="Include" />
           <e p="BubbleGun.cs" t="Include" />
