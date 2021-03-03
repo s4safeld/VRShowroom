@@ -11,13 +11,11 @@ public class numPadButton : MonoBehaviour
     public bool isUndo = false;
     public TextMeshPro screenText;
     public VIPArea vipArea = null;
-    private MyInputManager _mim;
     private TVButton _tvButton;
 
     private bool isSelected = false;
     // Start is called before the first frame update
     void Start() {
-        _mim = FindObjectOfType<MyInputManager>();
         _tvButton = GetComponent<TVButton>();
     }
 
@@ -25,7 +23,7 @@ public class numPadButton : MonoBehaviour
     void Update()
     {
         if (_tvButton.selected 
-            && (_mim.TriggerValue('l')>0 || _mim.TriggerValue('r')>0) 
+            && (MyInputManager.TriggerValue('l')>0 || MyInputManager.TriggerValue('r')>0) 
             && !isSelected) {
             
             isSelected = true;

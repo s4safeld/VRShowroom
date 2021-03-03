@@ -9,7 +9,6 @@ public class RotateObject : MonoBehaviour {
     private bool _selected = false;
     private bool _gripPressed = false;
     private Collider _col;
-    private MyInputManager _mim;
     private Animator _animator;
 
     public TextMeshPro[] descriptionTexts;
@@ -18,7 +17,6 @@ public class RotateObject : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         _col = GetComponent<Collider>();
-        _mim = FindObjectOfType<MyInputManager>();
         _animator = GetComponent<Animator>();
 
         foreach (var text in descriptionTexts) {
@@ -29,7 +27,7 @@ public class RotateObject : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (_mim.HoveredByRayInteractor(_col)) {
+        if (MyInputManager.HoveredByRayInteractor(_col)) {
             _selected = true;
             foreach (var text in descriptionTexts) {
                 text.enabled = true;
@@ -42,13 +40,13 @@ public class RotateObject : MonoBehaviour {
             }
         }
         
-        if (_mim.TriggerValue('l') <= 0 && _mim.TriggerValue('r') <= 0) {
+        if (MyInputManager.TriggerValue('l') <= 0 && MyInputManager.TriggerValue('r') <= 0) {
             _gripPressed = false;
         }
 
         //Debug.Log(!_gripPressed+","+ (_mim.TriggerValue('l') > 0 || _mim.TriggerValue('r') > 0)+","+ _selected);
         if (!_gripPressed 
-            &&(_mim.TriggerValue('l') > 0 || _mim.TriggerValue('r') > 0)
+            &&(MyInputManager.TriggerValue('l') > 0 || MyInputManager.TriggerValue('r') > 0)
             && _selected)
         {
             _gripPressed = true;

@@ -5,14 +5,12 @@ using UnityEngine.UI;
 using UnityEngine.Video;
 
 public class PlayPauseButton : MonoBehaviour {
-    private MyInputManager mim;
     public VideoPlayer vp;
     private TVButton _tvButton;
 
     private bool isPlaying = true;
     // Start is called before the first frame update
     void Start() {
-        mim = FindObjectOfType<MyInputManager>();
         _tvButton = GetComponent<TVButton>();
     }
 
@@ -21,7 +19,7 @@ public class PlayPauseButton : MonoBehaviour {
     {
         if (_tvButton.selected) {
             //Debug.Log("here");
-            if (mim.TriggerValue('l') > 0.0f || mim.TriggerValue('r') > 0.0f) {
+            if (MyInputManager.TriggerValue('l') > 0.0f || MyInputManager.TriggerValue('r') > 0.0f) {
                 Debug.Log("here",this);
                 if (isPlaying) {
                     vp.Pause();

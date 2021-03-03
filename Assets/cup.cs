@@ -9,8 +9,9 @@ public class cup : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Angle(Vector3.up, transform.up) > 90) {
+        if (Vector3.Angle(Vector3.up, transform.up) > 90 && content.enabled) {
             content.enabled = false;
+            GetComponent<AudioSource>().Play();
         }
     }
 }

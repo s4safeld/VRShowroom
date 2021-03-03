@@ -8,14 +8,8 @@ using UnityEngine.Serialization;
 
 public class Remote : MonoBehaviour {
     public bool grabbed = false;
-    private MyInputManager _mim;
     public Transform currHand;
     public float grabbingDistance = 1;
-    public ControllerHolster controllerHolster;
-
-    void Start() {
-        _mim = FindObjectOfType<MyInputManager>();
-    }
 
     void Update() {
 
@@ -25,18 +19,18 @@ public class Remote : MonoBehaviour {
         //    Debug.Log(mim.GripValue('r'));
         //Debug.Log(name+", grabbed: "+grabbed);
 
-        if (!grabbed && _mim.GripValue('l') > 0) {
-            if (Vector3.Distance(transform.position, _mim.leftHandController.position) < grabbingDistance) {
+        if (!grabbed && MyInputManager.GripValue('l') > 0) {
+            if (Vector3.Distance(transform.position, MyInputManager.leftHandController.position) < grabbingDistance) {
                 grabbed = true;
-                currHand = _mim.leftHandController;
+                currHand = MyInputManager.leftHandController;
                 currHand.GetComponent<myController>().grabbedSomething = true;
             }
         }
 
-        if (!grabbed && _mim.GripValue('r') > 0) {
-            if (Vector3.Distance(transform.position, _mim.rightHandController.position) < grabbingDistance) {
+        if (!grabbed && MyInputManager.GripValue('r') > 0) {
+            if (Vector3.Distance(transform.position, MyInputManager.rightHandController.position) < grabbingDistance) {
                 grabbed = true;
-                currHand = _mim.rightHandController;
+                currHand = MyInputManager.rightHandController;
                 currHand.GetComponent<myController>().grabbedSomething = true;
             }
         }
@@ -45,8 +39,8 @@ public class Remote : MonoBehaviour {
 
             transform.rotation = currHand.rotation;
 
-            if (currHand == _mim.rightHandController) {
-                if (_mim.GripValue('r') == 0) {
+            if (currHand == MyInputManager.rightHandController) {
+                if (MyInputManager.GripValue('r') == 0) {
                     grabbed = false;
                     /*if (controllerHolster.isInside(GetComponent<Collider>())) {
                         controllerHolster.GetComponent<AudioSource>().Play();
@@ -59,8 +53,8 @@ public class Remote : MonoBehaviour {
                 }
                     
             }
-            if(currHand == _mim.leftHandController){
-                if (_mim.GripValue('l') == 0) {
+            if(currHand == MyInputManager.leftHandController){
+                if (MyInputManager.GripValue('l') == 0) {
                     grabbed = false;
                     /*if (controllerHolster.isInside(GetComponent<Collider>())) {
                         controllerHolster.GetComponent<AudioSource>().Play();

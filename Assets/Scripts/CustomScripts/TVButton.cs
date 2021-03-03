@@ -14,16 +14,13 @@ public class TVButton : MonoBehaviour {
 
     public bool listenForRaycast;
 
-    private MyInputManager mim;
-
     private void Start() {
-        mim = FindObjectOfType<MyInputManager>();
         _collider = GetComponent<Collider>();
     }
 
     private void Update() {
-        if (mim.InRange(transform.position, 'a', grabbingRange) 
-            || (listenForRaycast && mim.HoveredByRayInteractor(_collider))) {
+        if (MyInputManager.InRange(transform.position, 'a', grabbingRange) 
+            || (listenForRaycast && MyInputManager.HoveredByRayInteractor(_collider))) {
             Select(selected = true);
         }
         else {

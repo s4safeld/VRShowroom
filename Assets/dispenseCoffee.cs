@@ -14,7 +14,10 @@ public class DispenseCoffee : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
         foreach (var col in _cupColliders) {
             if (other == col) {
-                other.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
+                if (!other.transform.GetChild(0).GetComponent<MeshRenderer>().enabled) {
+                    other.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
+                    GetComponent<AudioSource>().Play();
+                }
             }
         }
     }

@@ -15,10 +15,6 @@
           <e p="ComplexCube.cs" t="Include" />
           <e p="ControllerManager.cs" t="Include" />
           <e p="CustomScripts" t="Include">
-            <e p="AutomatBooth" t="Include">
-              <e p="automat.cs" t="Include" />
-              <e p="automatRemote.cs" t="Include" />
-            </e>
             <e p="Deprecated" t="Include">
               <e p="ControllerHolster.cs" t="Include" />
               <e p="ControllerStorage.cs" t="Include" />

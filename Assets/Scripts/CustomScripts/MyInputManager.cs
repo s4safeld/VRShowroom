@@ -14,15 +14,52 @@ public class MyInputManager : MonoBehaviour
     private List<InputDevice> devicesLeft = new List<InputDevice>();
     private List<InputDevice> devicesRight = new List<InputDevice>();
 
-    public InputDevice DeviceLeft;
-    public InputDevice DeviceRight;
-
-    public ArrayList xrRayInteractors;
-
-    public Transform leftHandController;
-    public Transform rightHandController;
+    public static InputDevice DeviceLeft;
+    public static InputDevice DeviceRight;
     
-    public bool InRange(Vector3 input, char side, float grabbingRange) {
+    public static ArrayList XRRayInteractors;
+
+    public Transform setLeftHandController;
+    public Transform setRightHandController;
+
+    public static Transform leftHandController;
+    public static Transform rightHandController;
+
+    private void OnEnable() {
+        if (!DeviceLeft.isValid) {
+            GetLeftDevice();
+        }
+        if (!DeviceRight.isValid) {
+            GetRightDevice();
+        }
+
+        leftHandController = setLeftHandController;
+        rightHandController = setRightHandController;
+        
+        XRRayInteractors = new ArrayList();
+        foreach (XRRayInteractor xri in FindObjectsOfType<XRRayInteractor>()) {
+            XRRayInteractors.Add(xri);
+        }
+    }
+
+    private void Update() {
+        if (!DeviceLeft.isValid) {
+            GetLeftDevice();
+        }
+
+        if (!DeviceRight.isValid) {
+            GetRightDevice();
+        }
+        #if UNITY_ANDROID
+            //Debug.Log("on android platform");
+        #endif
+
+        #if !UNITY_ANDROID 
+            //Debug.Log("not on Android Platform");
+        #endif
+    }
+    
+    public static bool InRange(Vector3 input, char side, float grabbingRange) {
         if (side == 'l') {
             return Vector3.Distance(leftHandController.position,input) < grabbingRange;
         }
@@ -33,8 +70,8 @@ public class MyInputManager : MonoBehaviour
                Vector3.Distance(rightHandController.position, input) < grabbingRange;
     }
 
-    public bool HoveredByRayInteractor(Collider col) {
-        foreach (XRRayInteractor xri in xrRayInteractors) {
+    public static bool HoveredByRayInteractor(Collider col) {
+        foreach (XRRayInteractor xri in XRRayInteractors) {
             if (xri.enabled) {
                 if (xri.GetCurrentRaycastHit(out RaycastHit raycastHit)) {
                     if (raycastHit.collider == col) {
@@ -43,7 +80,6 @@ public class MyInputManager : MonoBehaviour
                 }
             }
         }
-
         return false;
     }
 
@@ -57,44 +93,13 @@ public class MyInputManager : MonoBehaviour
         DeviceRight = devicesRight.FirstOrDefault();
     }
     
-    private void OnEnable() {
-        if (!DeviceLeft.isValid) {
-            GetLeftDevice();
-        }
-        if (!DeviceRight.isValid) {
-            GetRightDevice();
-        }
-        
-        xrRayInteractors = new ArrayList();
-        foreach (XRRayInteractor xri in FindObjectsOfType<XRRayInteractor>()) {
-            xrRayInteractors.Add(xri);
-        }
-    }
-
-    private void Update() {
-        if (!DeviceLeft.isValid) {
-            GetLeftDevice();
-        }
-
-        if (!DeviceRight.isValid) {
-            GetRightDevice();
-        }
-
-        #if UNITY_ANDROID
-            //Debug.Log("on android platform");
-        #endif
-        
-        #if !UNITY_ANDROID
-            //Debug.Log("not on Android Platform");
-        #endif
-        
-    }
+    
     
     //consult the following link to see what each Button does for each Platform
     //https://docs.unity3d.com/Manual/xr_input.html
     //Not every function is supported on each platform
 
-    public bool TriggerButtonPressed(char hand) {
+    public static bool TriggerButtonPressed(char hand) {
         switch (hand) {
             case 'l': {
                 return (DeviceLeft.TryGetFeatureValue(CommonUsages.triggerButton, out bool value) && value);
@@ -108,7 +113,7 @@ public class MyInputManager : MonoBehaviour
         }
     }
 
-    public float GripValue(char hand) {
+    public static float GripValue(char hand) {
         switch (hand) {
             case 'l': {
                 return DeviceLeft.TryGetFeatureValue(CommonUsages.grip, out float value) ? value : 0.0f;
@@ -123,7 +128,7 @@ public class MyInputManager : MonoBehaviour
         }
     }
 
-    public float TriggerValue(char hand) {
+    public static float TriggerValue(char hand) {
         switch (hand) {
             case 'l': {
                 return DeviceLeft.TryGetFeatureValue(CommonUsages.trigger, out float value) ? value : 0.0f;
@@ -138,7 +143,7 @@ public class MyInputManager : MonoBehaviour
         }
     }
 
-    public float BatteryLevel(char hand) {
+    public static float BatteryLevel(char hand) {
         switch (hand) {
             case 'l': {
                 return DeviceLeft.TryGetFeatureValue(CommonUsages.batteryLevel, out float value) ? value : 0.0f;
@@ -153,7 +158,7 @@ public class MyInputManager : MonoBehaviour
         }
     }
 
-    public Vector3 DeviceAcceleration(char hand) {
+    public static Vector3 DeviceAcceleration(char hand) {
         switch (hand) {
             case 'l': {
                 return DeviceLeft.TryGetFeatureValue(CommonUsages.deviceAcceleration, out Vector3 value) ? value : Vector3.zero;
@@ -168,7 +173,7 @@ public class MyInputManager : MonoBehaviour
         }
     }
 
-    public bool MenuButton(char hand) {
+    public static bool MenuButton(char hand) {
         switch (hand) {
             case 'l': {
                 return (DeviceLeft.TryGetFeatureValue(CommonUsages.menuButton, out bool value) && value);
@@ -183,7 +188,7 @@ public class MyInputManager : MonoBehaviour
         }
     }
 
-    public Vector2 Primary2DAxis(char hand) {
+    public static Vector2 Primary2DAxis(char hand) {
         switch (hand) {
             case 'l': {
                 return DeviceLeft.TryGetFeatureValue(CommonUsages.primary2DAxis, out Vector2 value)
@@ -202,7 +207,7 @@ public class MyInputManager : MonoBehaviour
         }
     }
 
-    public bool Primary2DAxisTouch(char hand) {
+    public static bool Primary2DAxisTouch(char hand) {
         switch (hand) {
             case 'l': {
                 return (DeviceLeft.TryGetFeatureValue(CommonUsages.primary2DAxisTouch, out bool value) && value);
@@ -217,7 +222,7 @@ public class MyInputManager : MonoBehaviour
         }
     }
 
-    public bool Primary2DAxisClick(char hand) {
+    public static bool Primary2DAxisClick(char hand) {
         switch (hand) {
             case 'l': {
                 return (DeviceLeft.TryGetFeatureValue(CommonUsages.primary2DAxisClick, out bool value) && value);
@@ -232,7 +237,7 @@ public class MyInputManager : MonoBehaviour
         }
     }
 
-    public bool PrimaryButton(char hand) {
+    public static bool PrimaryButton(char hand) {
         switch (hand) {
             case 'l': {
                 return (DeviceLeft.TryGetFeatureValue(CommonUsages.primaryButton, out bool value) && value);
