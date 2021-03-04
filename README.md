@@ -10,6 +10,7 @@ Ergo: We have to hop between packages to switch platforms:
 
 ### Quest > SteamVR
 - Package Manager > remove Oculus XR Plugin
+- Build Settings > PC > switch Platform
 - Player Settings > Deprecated Settings > Check VR Support
 - Done
 
