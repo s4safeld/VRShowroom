@@ -1,12 +1,34 @@
 fileFormatVersion: 2
-guid: 6f3690f7720d26e4cbb3d36f2e2263df
+guid: 8139359fa72021b4798292559cdcdec3
 ModelImporter:
   serializedVersion: 19301
-  internalIDToNameTable:
+  internalIDToNameTable: []
+  externalObjects:
   - first:
-      74: -623603649343465320
-    second: Scene
-  externalObjects: {}
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GLASS__Architectural__Plate-Glass
+    second: {fileID: 2100000, guid: 265924c800ad0c044a511b7f8d25199f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: dc5bfe447eeeaf74d9ac98ea8850b641, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: armAnchor
+    second: {fileID: 2100000, guid: dc5bfe447eeeaf74d9ac98ea8850b641, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: armAnchorBlack
+    second: {fileID: 2100000, guid: 5aaf14c8827960846b717d3e96942be8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: platform
+    second: {fileID: 2100000, guid: 5aaf14c8827960846b717d3e96942be8, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -39,16 +61,16 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
