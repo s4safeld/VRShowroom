@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -7,59 +8,53 @@ using UnityEngine.Serialization;
 public class RotateObject : MonoBehaviour {
     private bool _rotated = false;
     private bool _selected = false;
-    private bool _gripPressed = false;
+    private bool _triggerPressed = false;
     private Collider _col;
     private Animator _animator;
+    private Outline _outline;
 
-    public TextMeshPro[] descriptionTexts;
+    private char handIndicator;
+
     public string openAnim;
     public string closeAnim;
     // Start is called before the first frame update
     void Start() {
         _col = GetComponent<Collider>();
         _animator = GetComponent<Animator>();
-
-        foreach (var text in descriptionTexts) {
-            text.enabled = false;
-        }
+        _outline = GetComponent<Outline>();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (MyInputManager.HoveredByRayInteractor(_col)) {
+    void Update() {
+        handIndicator = MyInputManager.HoveredByRayInteractor(_col);
+        
+        if (handIndicator != '0') {
+            _outline.enabled = true;
             _selected = true;
-            foreach (var text in descriptionTexts) {
-                text.enabled = true;
+            if (MyInputManager.TriggerValue(handIndicator) <= 0) {
+                _triggerPressed = false;
+            }
+
+            Debug.Log(!_triggerPressed+","+ (MyInputManager.TriggerValue(handIndicator)>0)+","+ _selected);
+            if (!_triggerPressed
+                && (MyInputManager.TriggerValue(handIndicator) > 0)
+                && _selected) {
+                _triggerPressed = true;
+
+                if (!_rotated) {
+                    _animator.Play(closeAnim);
+                    _rotated = true;
+                }
+
+                if (_rotated) {
+                    _animator.Play(openAnim);
+                    _rotated = false;
+                }
             }
         }
         else {
+            _outline.enabled = false;
             _selected = false;
-            foreach (var text in descriptionTexts) {
-                text.enabled = false;
-            }
         }
-        
-        if (MyInputManager.TriggerValue('l') <= 0 && MyInputManager.TriggerValue('r') <= 0) {
-            _gripPressed = false;
-        }
-
-        //Debug.Log(!_gripPressed+","+ (_mim.TriggerValue('l') > 0 || _mim.TriggerValue('r') > 0)+","+ _selected);
-        if (!_gripPressed 
-            &&(MyInputManager.TriggerValue('l') > 0 || MyInputManager.TriggerValue('r') > 0)
-            && _selected)
-        {
-            _gripPressed = true;
-            
-            if (!_rotated) {
-                _animator.Play(closeAnim);
-                _rotated = true;
-            }
-            if (_rotated) {
-                _animator.Play(openAnim);
-                _rotated = false;
-            }
-        }
-        
     }
 }

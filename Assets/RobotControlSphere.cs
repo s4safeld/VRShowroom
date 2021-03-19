@@ -18,9 +18,11 @@ public class RobotControlSphere : MonoBehaviour {
     private Vector3[] clawsRotationOrigins;
 
     private float triggerValueOfPreviousFrame = 0;
-    
+    private Outline _outline;
+
 
     private void Start() {
+        _outline = GetComponent<Outline>();
 
         grababbleObjects = grababbleObjectsParent.GetComponentsInChildren<Collider>();
         
@@ -40,47 +42,50 @@ public class RobotControlSphere : MonoBehaviour {
         target.localPosition = new Vector3(position.x*3, position.y, -position.z*3);
         target.localEulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z);
 
-        if (MyInputManager.GripValue('r') > 0 && MyInputManager.InRange(transform.position, 'r', 0.5f)) {
-            isGrabbed = true;
-            handIndicator = 'r';
-        }
-        if (MyInputManager.GripValue('l') > 0 && MyInputManager.InRange(transform.position, 'l', 0.5f)) {
-            isGrabbed = true;
-            handIndicator = 'l';
-        }
-        if (isGrabbed && MyInputManager.GripValue(handIndicator) <= 0) {
-            isGrabbed = false;
-            handIndicator = 'n';
-        }
+        handIndicator = MyInputManager.InRange(transform.position, 0.5f);
 
-        if (isGrabbed && MyInputManager.TriggerValue(handIndicator)>0) {
-                MoveClaws(MyInputManager.TriggerValue(handIndicator));
-        }
 
-        if (isGrabbed && MyInputManager.TriggerValue(handIndicator)<=0) {
-            MoveClaws(0);
-            foreach (var obj in grababbleObjects) {
-                obj.transform.parent = grababbleObjectsParent;
-                obj.GetComponent<Rigidbody>().useGravity = true;
+        if (handIndicator != '0') {
+            if (!isGrabbed)
+                _outline.enabled = true;
+            
+            if (MyInputManager.GripValue(handIndicator) > 0 && !isGrabbed) {
+                isGrabbed = true;
+                _outline.enabled = false;
             }
-        }
 
+            if (MyInputManager.GripValue(handIndicator) > 0 && !isGrabbed) {
+                isGrabbed = true;
+                _outline.enabled = false;
+            }
+            
+            MoveClaws(MyInputManager.TriggerValue(handIndicator));
+            
+            if (isGrabbed && MyInputManager.GripValue(handIndicator) <= 0)
+                isGrabbed = false;
+        }
     }
 
     void MoveClaws(float input) {
 
-        if (input < triggerValueOfPreviousFrame) {
-            for (int i = 0; i < claws.Length; i++) {
+        if (input < triggerValueOfPreviousFrame || input <= 0) {
+            foreach (var obj in grababbleObjects) {
+                obj.transform.parent = grababbleObjectsParent;
+                obj.GetComponent<Rigidbody>().useGravity = true;
+                obj.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            }
+            for (var i = 0; i < claws.Length; i++) {
                 claws[i].localRotation = Quaternion.Lerp(Quaternion.Euler(clawsRotationOrigins[i])
                     , Quaternion.Euler(clawsRotationGoals[i]), input);
             }
         }
         else {
-            for (int i = 0; i < claws.Length; i++) {
+            for (var i = 0; i < claws.Length; i++) {
                 foreach (Collider col in grababbleObjects) {
                     if (col.bounds.Contains(clawTips[i].position)) {
                         col.transform.parent = clawTips[i];
                         col.GetComponent<Rigidbody>().useGravity = false;
+                        col.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                         return;
                     }
                 }

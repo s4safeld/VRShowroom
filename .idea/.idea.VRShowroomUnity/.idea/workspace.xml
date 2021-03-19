@@ -20,16 +20,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12403821-c4b7-4010-b31b-176f1288c8c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/FunctionCube.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FunctionCube.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/RobotArm/robotArm.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/RobotArm/robotArm.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Booths/_CoffeeBooth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Booths/_CoffeeBooth.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Booths/_RobotBooth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Booths/_RobotBooth.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/DeselectFastForwardButton.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/DeselectFastForwardButton.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/DeselectMuteButton.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/DeselectMuteButton.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/DeselectPlayPauseButton.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/DeselectPlayPauseButton.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/DeselectRewindButton.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/DeselectRewindButton.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/FastForwardButton.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/FastForwardButton.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/MuteButton.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/MuteButton.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/PlayPauseButton.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/PlayPauseButton.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/RewindButton.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/RewindButton.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/SelectFastForwardButton.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/SelectFastForwardButton.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/SelectMuteButton.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/SelectMuteButton.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/SelectPlayPauseButton.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/SelectPlayPauseButton.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/SelectRewindButton.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV/SelectRewindButton.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Booths/_MercedesBooth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Booths/_MercedesBooth.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Booths/_VIPArea.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Booths/_VIPArea.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RobotControlSphere.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RobotControlSphere.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/cup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/cup.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/dispenseCoffee.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/RotateObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/RotateObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/FastForwardButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/FastForwardButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/PlayPauseButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/PlayPauseButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VIPArea/numPadButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VIPArea/numPadButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +68,21 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CustomScripts/DispenseCoffee.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/XRInteractionManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/Interactables/XRGrabInteractable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/RobotControlSphere.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/RotateBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/FastForwardButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VIPArea/numPadButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/PlayPauseButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/RotateObject.cs" />
         <option value="$PROJECT_DIR$/Assets/RobotControlSphere.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" />
       </list>
     </option>
   </component>
@@ -91,6 +126,7 @@
       <option name="presentableId" value="Default" />
       <updated>1615373787523</updated>
       <workItem from="1615373805258" duration="15554000" />
+      <workItem from="1616154934417" duration="6187000" />
     </task>
     <servers />
   </component>
@@ -109,8 +145,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1616157758710">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.357.1920.1040/-1080.-481.1080.1880@0.0.2560.1400" timestamp="1616157758710" />
   </component>
 </project>

@@ -19,8 +19,7 @@ public class PlayPauseButton : MonoBehaviour {
     {
         if (_tvButton.selected) {
             //Debug.Log("here");
-            if (MyInputManager.TriggerValue('l') > 0.0f || MyInputManager.TriggerValue('r') > 0.0f) {
-                Debug.Log("here",this);
+            if (MyInputManager.TriggerValue(_tvButton.handIndicator) > 0.0f) {
                 if (isPlaying) {
                     vp.Pause();
                     isPlaying = false;

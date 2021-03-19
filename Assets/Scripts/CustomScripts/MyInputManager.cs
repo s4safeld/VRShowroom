@@ -16,14 +16,18 @@ public class MyInputManager : MonoBehaviour
 
     public static InputDevice DeviceLeft;
     public static InputDevice DeviceRight;
-    
-    public static ArrayList XRRayInteractors;
 
     public Transform setLeftHandController;
     public Transform setRightHandController;
 
     public static Transform leftHandController;
     public static Transform rightHandController;
+
+    public XRRayInteractor setLeftHandRayInteractor;
+    public XRRayInteractor setRightHandRayInteractor;
+    
+    public static XRRayInteractor leftHandRayInteractor;
+    public static XRRayInteractor rightHandRayInteractor;
 
     private void OnEnable() {
         if (!DeviceLeft.isValid) {
@@ -35,11 +39,9 @@ public class MyInputManager : MonoBehaviour
 
         leftHandController = setLeftHandController;
         rightHandController = setRightHandController;
-        
-        XRRayInteractors = new ArrayList();
-        foreach (XRRayInteractor xri in FindObjectsOfType<XRRayInteractor>()) {
-            XRRayInteractors.Add(xri);
-        }
+
+        leftHandRayInteractor = setLeftHandRayInteractor;
+        rightHandRayInteractor = setRightHandRayInteractor;
     }
 
     private void Update() {
@@ -59,28 +61,36 @@ public class MyInputManager : MonoBehaviour
         #endif
     }
     
-    public static bool InRange(Vector3 input, char side, float grabbingRange) {
-        if (side == 'l') {
-            return Vector3.Distance(leftHandController.position,input) < grabbingRange;
-        }
-        if (side == 'r') {
-            return Vector3.Distance(rightHandController.position, input) < grabbingRange;
-        }
-        return Vector3.Distance(leftHandController.position, input) < grabbingRange ||
-               Vector3.Distance(rightHandController.position, input) < grabbingRange;
+    public static char InRange(Vector3 input, float grabbingRange) {
+        if (Vector3.Distance(leftHandController.position, input) < grabbingRange &&
+            Vector3.Distance(leftHandController.position, input) <= Vector3.Distance(rightHandController.position, input))
+            return 'l';
+        if (Vector3.Distance(rightHandController.position, input) < grabbingRange &&
+            Vector3.Distance(rightHandController.position, input) <= Vector3.Distance(leftHandController.position, input))
+            return 'r';
+        return '0';
     }
 
-    public static bool HoveredByRayInteractor(Collider col) {
-        foreach (XRRayInteractor xri in XRRayInteractors) {
-            if (xri.enabled) {
-                if (xri.GetCurrentRaycastHit(out RaycastHit raycastHit)) {
+    public static char HoveredByRayInteractor(Collider col) {
+        try {
+            if (leftHandRayInteractor.enabled) {
+                if (leftHandRayInteractor.GetCurrentRaycastHit(out RaycastHit raycastHit)) {
                     if (raycastHit.collider == col) {
-                        return true;
+                        return 'l';
                     }
                 }
             }
-        }
-        return false;
+        }catch { /*ignored*/ }
+        try {
+            if (rightHandRayInteractor.enabled) {
+                if (rightHandRayInteractor.GetCurrentRaycastHit(out RaycastHit raycastHit)) {
+                    if (raycastHit.collider == col) {
+                        return 'r';
+                    }
+                }
+            }
+        }catch { /*ignored*/ }
+        return '0';
     }
 
     private void GetLeftDevice() {
