@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PageFlipper : MonoBehaviour {
-    public bool nextPageFlipper;
+    public bool forward;
     public Renderer screen;
     public Texture[] textures;
     private TVButton _tvButton;
@@ -17,7 +17,7 @@ public class PageFlipper : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (_tvButton.selected && !pageFlipped) {
-            if (nextPageFlipper) {
+            if (forward) {
                 if (i > textures.Length)
                     i = -1;
                 screen.material.mainTexture = textures[++i];
