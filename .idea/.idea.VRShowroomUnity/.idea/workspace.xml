@@ -23,14 +23,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/TV.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Mercedes/PDF_alike/Materials/unknown (1).mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Mercedes/PDF_alike/Materials/unknown (1).mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Volvo/FBX/2018_Volvo_XC60_LOW.FBX.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Volvo/FBX/2018_Volvo_XC60_LOW.FBX.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Booths/_MercedesBooth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Booths/_MercedesBooth.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/tokenStation/apple/Textures/apple-NM_u0_v0.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/tokenStation/apple/Textures/apple-NM_u0_v0.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/tokenStation/apple/apple.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/tokenStation/apple/apple.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Booths/_PatanestaBooth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Booths/_PatanestaBooth.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Booths/_StartingBooth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Booths/_StartingBooth.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Booths/_VolvoBooth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Booths/_VolvoBooth.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RotateBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RotateBase.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/PageFlipper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/PageFlipper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +64,9 @@
         <option value="$PROJECT_DIR$/Assets/paintApply.cs" />
         <option value="$PROJECT_DIR$/Assets/PaintApply.cs" />
         <option value="$PROJECT_DIR$/Assets/PaintFlipper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Spline.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Floating.cs" />
+        <option value="$PROJECT_DIR$/Assets/shiftscreen.cs" />
       </list>
     </option>
   </component>
@@ -112,6 +115,8 @@
       <workItem from="1616679961802" duration="1151000" />
       <workItem from="1616756234521" duration="6265000" />
       <workItem from="1616841997872" duration="1786000" />
+      <workItem from="1617795843969" duration="5035000" />
+      <workItem from="1617974637775" duration="5266000" />
     </task>
     <servers />
   </component>
@@ -144,9 +149,9 @@
       <screen x="-1080" y="-481" width="1080" height="1880" />
     </state>
     <state x="-1080" y="-88" width="1006" height="1309" maximized="true" key="dock-window-1/0.0.2560.1400/2560.357.1920.1040/-1080.-481.1080.1880@0.0.2560.1400" timestamp="1616842465233" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1616157758710">
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1617795897970">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.357.1920.1040/-1080.-481.1080.1880@0.0.2560.1400" timestamp="1616157758710" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.357.1920.1040/-1080.-481.1080.1880@0.0.2560.1400" timestamp="1617795897970" />
   </component>
 </project>
