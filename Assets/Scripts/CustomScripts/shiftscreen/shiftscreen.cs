@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem.Controls;
 
 public class shiftscreen : MonoBehaviour {
     private Collider col;
+    private Outline outline;
     private Vector3 leftHandControllerPosition;
     private Vector3 rightHandControllerPosition;
 
@@ -15,6 +17,7 @@ public class shiftscreen : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         col = GetComponent<Collider>();
+        outline = GetComponent<Outline>();
     }
 
     // Update is called once per frame
@@ -24,8 +27,13 @@ public class shiftscreen : MonoBehaviour {
 
         if (MyInputManager.GripValue('r') > 0 && col.bounds.Contains(rightHandControllerPosition)) {
             transform.position = spline.WhereOnSpline(rightHandControllerPosition);
+            outline.enabled = true;
         }else if (MyInputManager.GripValue('l') > 0 && col.bounds.Contains(leftHandControllerPosition)){
             transform.position = spline.WhereOnSpline(leftHandControllerPosition);
+            outline.enabled = true;
+        }
+        else {
+            outline.enabled = false;
         }
 
         for (int i = 0; i < transform.childCount; i++) {

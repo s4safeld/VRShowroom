@@ -6,8 +6,6 @@
     <e p="F:\UnityProjets\bejoynt\VRShowroom\VRShowroomUnity" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="paintApply.cs" t="Include" />
-        <e p="PaintFlipper.cs" t="Include" />
         <e p="QuickOutline" t="Include">
           <e p="Readme.txt" t="Include" />
           <e p="Resources" t="Include">
@@ -20,21 +18,22 @@
             <e p="Outline.cs" t="Include" />
           </e>
         </e>
-        <e p="RobotControlSphere.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ActionBasedControllerManager.cs" t="Include" />
           <e p="BubbleGun.cs" t="Include" />
           <e p="ComplexCube.cs" t="Include" />
           <e p="ControllerManager.cs" t="Include" />
           <e p="CustomScripts" t="Include">
-            <e p="cup.cs" t="Include" />
+            <e p="CoffeeMachine" t="Include">
+              <e p="cup.cs" t="Include" />
+              <e p="DispenseCoffee.cs" t="Include" />
+            </e>
             <e p="Deprecated" t="Include">
               <e p="ControllerHolster.cs" t="Include" />
               <e p="ControllerStorage.cs" t="Include" />
               <e p="myController.cs" t="Include" />
               <e p="RewindButton.cs" t="Include" />
             </e>
-            <e p="DispenseCoffee.cs" t="Include" />
             <e p="Floating.cs" t="Include" />
             <e p="MercedesBooth" t="Include">
               <e p="MercedesPodium.cs" t="Include" />
@@ -44,7 +43,13 @@
             </e>
             <e p="MyInputManager.cs" t="Include" />
             <e p="Remote.cs" t="Include" />
-            <e p="Spline.cs" t="Include" />
+            <e p="RobotBooth" t="Include">
+              <e p="RobotControlSphere.cs" t="Include" />
+            </e>
+            <e p="shiftscreen" t="Include">
+              <e p="shiftscreen.cs" t="Include" />
+              <e p="Spline.cs" t="Include" />
+            </e>
             <e p="TVBooth" t="Include">
               <e p="FastForwardButton.cs" t="Include" />
               <e p="MuteButton.cs" t="Include" />
@@ -56,6 +61,8 @@
               <e p="VIPArea.cs" t="Include" />
             </e>
             <e p="VolvoBooth" t="Include">
+              <e p="paintApply.cs" t="Include" />
+              <e p="PaintFlipper.cs" t="Include" />
               <e p="VolvoPodium.cs" t="Include" />
             </e>
           </e>
@@ -69,7 +76,6 @@
           <e p="SimpleTeleportHighlight.shader" t="Include" />
           <e p="Unlit-Line-Opaque.shader" t="Include" />
         </e>
-        <e p="shiftscreen.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />

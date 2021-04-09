@@ -21,16 +21,84 @@
   <component name="ChangeListManager">
     <list default="true" id="12403821-c4b7-4010-b31b-176f1288c8c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/tokenStation/apple/Textures/apple-NM_u0_v0.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/tokenStation/apple/Textures/apple-NM_u0_v0.tif.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/tokenStation/apple/apple.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/tokenStation/apple/apple.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Booths/_PatanestaBooth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Booths/_PatanestaBooth.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Booths/_StartingBooth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Booths/_StartingBooth.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Booths/_VolvoBooth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Booths/_VolvoBooth.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RotateBase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RotateBase.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Brush_Low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Brush_Low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ConstructionLight_Low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/ConstructionLight_Low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/GroundPlane.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/GroundPlane.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Hammer_Low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Hammer_Low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Horizon.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Horizon.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Jigsaw_Low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Jigsaw_Low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/MagneticLevel_Low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/MagneticLevel_Low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/PaintBucket_Low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/PaintBucket_Low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/SafetyGoggles_Low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/SafetyGoggles_Low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/SafetyHat_Low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/SafetyHat_Low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/SignatureScreen.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/SignatureScreen.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Small_Plane.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Small_Plane.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/StoneFlat.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/StoneFlat.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/StoneRound.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/StoneRound.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Stud.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Stud.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/TreeBox.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/TreeBox.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/TreeRound.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/TreeRound.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Workbench.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Workbench.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Workbench_Low.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Workbench_Low.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Workshop_Set.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Workshop_Set.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/controller.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/controller.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/cup.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/cup.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/directionArrow.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/directionArrow.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/fileAnchorWall.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/fileAnchorWall.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/floatingAnchor.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/floatingAnchor.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/human.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/human.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/lowPolyIsland.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/lowPolyIsland.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/reticle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/reticle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/spaceShip.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/spaceShip.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/teleportHightlight.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/teleportHightlight.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/teleportPlatform.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/teleportPlatform.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PaintApply.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PaintApply.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PaintFlipper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PaintFlipper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RobotControlSphere.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RobotControlSphere.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/DispenseCoffee.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/DispenseCoffee.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Spline.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Spline.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/cup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/cup.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/shiftscreen.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/shiftscreen.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +109,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/PaintApply.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CustomScripts/DispenseCoffee.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/XRInteractionManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/PaintFlipper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/Interactables/XRGrabInteractable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/RobotControlSphere.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -67,6 +131,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Spline.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Floating.cs" />
         <option value="$PROJECT_DIR$/Assets/shiftscreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/shiftscreen/shiftscreen.cs" />
       </list>
     </option>
   </component>
@@ -116,7 +181,7 @@
       <workItem from="1616756234521" duration="6265000" />
       <workItem from="1616841997872" duration="1786000" />
       <workItem from="1617795843969" duration="5035000" />
-      <workItem from="1617974637775" duration="5266000" />
+      <workItem from="1617974637775" duration="6061000" />
     </task>
     <servers />
   </component>

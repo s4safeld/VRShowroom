@@ -18,11 +18,11 @@ public class RobotControlSphere : MonoBehaviour {
     private Vector3[] clawsRotationOrigins;
 
     private float triggerValueOfPreviousFrame = 0;
-    private Outline _outline;
+    private Outline outline;
 
 
     private void Start() {
-        _outline = GetComponent<Outline>();
+        outline = GetComponent<Outline>();
 
         grababbleObjects = grababbleObjectsParent.GetComponentsInChildren<Collider>();
         
@@ -47,16 +47,16 @@ public class RobotControlSphere : MonoBehaviour {
 
         if (handIndicator != '0') {
             if (!isGrabbed)
-                _outline.enabled = true;
+                outline.enabled = true;
             
             if (MyInputManager.GripValue(handIndicator) > 0 && !isGrabbed) {
                 isGrabbed = true;
-                _outline.enabled = false;
+                outline.enabled = false;
             }
 
             if (MyInputManager.GripValue(handIndicator) > 0 && !isGrabbed) {
                 isGrabbed = true;
-                _outline.enabled = false;
+                outline.enabled = false;
             }
             
             MoveClaws(MyInputManager.TriggerValue(handIndicator));
