@@ -15,6 +15,6 @@ public class Floating : MonoBehaviour {
         var transformLocalPosition = transform.localPosition;
         transformLocalPosition.z += (0.001f * Mathf.Cos(Time.time+start));
         transform.localPosition = transformLocalPosition;
-        transform.localEulerAngles += (10f*Vector3.right*Time.deltaTime);
+        transform.Rotate(Vector3.up,Mathf.Cos((50f * Time.deltaTime)));
     }
 }

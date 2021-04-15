@@ -20,14 +20,15 @@ public class PaintFlipper : MonoBehaviour {
     public PaintApply paintApply;
     static int i = 0;
     bool calledBefore = false;
+    private Camera cam;
     // Start is called before the first frame update
     void Start() {
         tvButton = GetComponent<TVButton>();
+        cam = transform.parent.GetComponentInChildren<Camera>();
     }
 
     // Update is called once per frame
     void Update() {
-
         if (tvButton.selected && MyInputManager.TriggerButtonPressed(tvButton.handIndicator)) {
             if (forward) {
                 if (i >= materials.Length) i = 0;
@@ -40,6 +41,12 @@ public class PaintFlipper : MonoBehaviour {
         }
         else {
             calledBefore = false;
+        }
+
+        if (Vector3.Distance(cam.transform.position, MyInputManager.leftHandController.position) > 5)
+            cam.enabled = false;
+        else {
+            cam.enabled = true;
         }
     }
 

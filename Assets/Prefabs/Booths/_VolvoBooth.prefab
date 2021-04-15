@@ -897,6 +897,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1556143566478177673}
+  - component: {fileID: 6581005020592688978}
   m_Layer: 0
   m_Name: Tablet
   m_TagString: Untagged
@@ -911,8 +912,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556143566478177672}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.2, y: 0, z: -0}
+  m_LocalRotation: {x: 0, y: 0.92387956, z: 0.38268343, w: 0}
+  m_LocalPosition: {x: -0.2, y: 0, z: 0}
   m_LocalScale: {x: 0.20569493, y: 0.20569496, z: 0.20569493}
   m_Children:
   - {fileID: 1556143566133894721}
@@ -927,7 +928,20 @@ Transform:
   - {fileID: 1556143567149885522}
   m_Father: {fileID: 1556143566881877500}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: -45, y: 180, z: 0}
+--- !u!65 &6581005020592688978
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556143566478177672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.21, y: 2.08, z: 0.16}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1556143566612592272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,7 +1046,6 @@ GameObject:
   - component: {fileID: 1556143566881877500}
   - component: {fileID: 1556143566881877502}
   - component: {fileID: 1556143566881877501}
-  - component: {fileID: 1556143566881877503}
   m_Layer: 0
   m_Name: GrabPoint
   m_TagString: Untagged
@@ -1047,14 +1060,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556143566881877443}
-  m_LocalRotation: {x: 0, y: -0.25493956, z: 0, w: 0.96695703}
+  m_LocalRotation: {x: -0.37003842, y: -0.23553342, z: -0.09756113, w: 0.8933518}
   m_LocalPosition: {x: -2.111, y: 1.029, z: -5.035}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1556143566478177673}
   m_Father: {fileID: 7353007695088194501}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -29.54, z: 0}
+  m_LocalEulerAnglesHint: {x: -45, y: -29.54, z: 0}
 --- !u!54 &1556143566881877502
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1084,7 +1097,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
-  m_Colliders: []
+  m_Colliders:
+  - {fileID: 6581005020592688978}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1148,19 +1162,6 @@ MonoBehaviour:
   m_ThrowAngularVelocityScale: 1
   m_GravityOnDetach: 0
   m_RetainTransformParent: 1
---- !u!65 &1556143566881877503
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1556143566881877443}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.45, y: 0.44, z: 0.03}
-  m_Center: {x: -0.2, y: 0, z: 0}
 --- !u!1 &1556143566895580769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,7 +1444,7 @@ GameObject:
   - component: {fileID: 1556143567149885517}
   - component: {fileID: 1556143567149885516}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Backplate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1458,7 +1459,7 @@ Transform:
   m_GameObject: {fileID: 1556143567149885521}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.027}
-  m_LocalScale: {x: 1, y: 1, z: 0.056681}
+  m_LocalScale: {x: 1.9136, y: 1.7998, z: 0.056681}
   m_Children: []
   m_Father: {fileID: 1556143566478177673}
   m_RootOrder: 9
