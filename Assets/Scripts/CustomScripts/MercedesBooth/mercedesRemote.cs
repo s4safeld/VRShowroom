@@ -33,7 +33,7 @@ public class mercedesRemote : MonoBehaviour
         if (remote.grabbed &&(MyInputManager.Primary2DAxisClick('l') || MyInputManager.Primary2DAxisClick('r'))) {
             if (remote.grabbed) {
                 
-                primary2DAxis = MyInputManager.Primary2DAxis(remote.currHand == MyInputManager.leftHandController ? 'l' : 'r');
+                primary2DAxis = MyInputManager.Primary2DAxis(remote.currHandIndicator);
                 
                 //explode
                 if (primary2DAxis.y > 0 && primary2DAxis.x <= 0) {

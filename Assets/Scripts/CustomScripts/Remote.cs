@@ -8,63 +8,66 @@ using UnityEngine.Serialization;
 
 public class Remote : MonoBehaviour {
     public bool grabbed = false;
-    public Transform currHand;
     public float grabbingDistance = 1;
 
+    private Transform oldParent;
+    private Vector3 oldPosition;
+    private Quaternion oldRotation;
+    public char currHandIndicator;
+
+    private void Start() {
+        oldParent = transform.parent;
+        oldPosition = transform.position;
+        oldRotation = transform.rotation;
+    }
+
     void Update() {
-
-        //if(mim.GripValue('l')>0)
-        //    Debug.Log(mim.GripValue('l'));
-        //if(mim.GripValue('r')>0)
-        //    Debug.Log(mim.GripValue('r'));
-        //Debug.Log(name+", grabbed: "+grabbed);
-
         if (!grabbed && MyInputManager.GripValue('l') > 0) {
             if (Vector3.Distance(transform.position, MyInputManager.leftHandController.position) < grabbingDistance) {
                 grabbed = true;
-                currHand = MyInputManager.leftHandController;
-                currHand.GetComponent<myController>().grabbedSomething = true;
+                foreach (var mr in MyInputManager.leftHandController.GetComponentsInChildren<MeshRenderer>()) {
+                    mr.enabled = false;
+                }
+
+                transform.parent = MyInputManager.leftHandController.parent;
+                transform.rotation = MyInputManager.leftHandController.rotation;
+                transform.position = MyInputManager.leftHandController.position;
+
+                currHandIndicator = 'l';
             }
         }
-
-        if (!grabbed && MyInputManager.GripValue('r') > 0) {
+        else 
+        if(!grabbed && MyInputManager.GripValue('r') > 0) {
             if (Vector3.Distance(transform.position, MyInputManager.rightHandController.position) < grabbingDistance) {
                 grabbed = true;
-                currHand = MyInputManager.rightHandController;
-                currHand.GetComponent<myController>().grabbedSomething = true;
+                foreach (var mr in MyInputManager.rightHandController.GetComponentsInChildren<MeshRenderer>()) {
+                    mr.enabled = false;
+                }
+
+                transform.parent = MyInputManager.rightHandController.parent;
+                transform.rotation = MyInputManager.rightHandController.rotation;
+                transform.position = MyInputManager.rightHandController.position;
+
+                currHandIndicator = 'r';
             }
         }
 
+        
+
         if (grabbed) {
+            if (MyInputManager.GripValue(currHandIndicator) <= 0) {
+                transform.parent = oldParent;
+                transform.rotation = oldRotation;
+                transform.position = oldPosition;
 
-            transform.rotation = currHand.rotation;
+                if (currHandIndicator == 'l') 
+                    foreach (var mr in MyInputManager.leftHandController.GetComponentsInChildren<MeshRenderer>()) 
+                        mr.enabled = true;
+                else
+                    foreach (var mr in MyInputManager.rightHandController.GetComponentsInChildren<MeshRenderer>())
+                        mr.enabled = true;
 
-            if (currHand == MyInputManager.rightHandController) {
-                if (MyInputManager.GripValue('r') == 0) {
-                    grabbed = false;
-                    /*if (controllerHolster.isInside(GetComponent<Collider>())) {
-                        controllerHolster.GetComponent<AudioSource>().Play();
-                        ControllerStorage.storage.Add(gameObject);
-                        transform.position -= new Vector3(0,-100,0);
-                    }*/
-
-                    currHand.GetComponent<myController>().grabbedSomething = false;
-                    currHand = null;
-                }
-                    
-            }
-            if(currHand == MyInputManager.leftHandController){
-                if (MyInputManager.GripValue('l') == 0) {
-                    grabbed = false;
-                    /*if (controllerHolster.isInside(GetComponent<Collider>())) {
-                        controllerHolster.GetComponent<AudioSource>().Play();
-                        ControllerStorage.storage.Add(gameObject);
-                        transform.position -= new Vector3(0, -100, 0);
-                    }*/
-
-                    currHand.GetComponent<myController>().grabbedSomething = false;
-                    currHand = null;
-                }
+                grabbed = false;
             }
         }
     }

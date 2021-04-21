@@ -21,11 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="12403821-c4b7-4010-b31b-176f1288c8c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Booths/_VolvoBooth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Booths/_VolvoBooth.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/CoffeeMachine/cup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/CoffeeMachine/cup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Floating.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Floating.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VolvoBooth/PaintFlipper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VolvoBooth/PaintFlipper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/mercedesRemote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/mercedesRemote.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Remote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Remote.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +60,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/CoffeeMachine/cup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Floating.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VolvoBooth/PaintFlipper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/mercedesRemote.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Remote.cs" />
       </list>
     </option>
   </component>
@@ -112,7 +112,8 @@
       <workItem from="1616841997872" duration="1786000" />
       <workItem from="1617795843969" duration="5035000" />
       <workItem from="1617974637775" duration="6721000" />
-      <workItem from="1618480034884" duration="4835000" />
+      <workItem from="1618480034884" duration="4859000" />
+      <workItem from="1619003043019" duration="2421000" />
     </task>
     <servers />
   </component>
