@@ -25,11 +25,8 @@ public class shiftscreen : MonoBehaviour {
         leftHandControllerPosition = MyInputManager.leftHandController.position;
         rightHandControllerPosition = MyInputManager.rightHandController.position;
 
-        if (MyInputManager.GripValue('r') > 0 && col.bounds.Contains(rightHandControllerPosition)) {
+        if (MyInputManager.TriggerValue('r') > 0 && col.bounds.Contains(rightHandControllerPosition)) {
             transform.position = spline.WhereOnSpline(rightHandControllerPosition);
-            outline.enabled = true;
-        }else if (MyInputManager.GripValue('l') > 0 && col.bounds.Contains(leftHandControllerPosition)){
-            transform.position = spline.WhereOnSpline(leftHandControllerPosition);
             outline.enabled = true;
         }
         else {

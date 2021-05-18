@@ -23,11 +23,20 @@ public class MyInputManager : MonoBehaviour
     public static Transform leftHandController;
     public static Transform rightHandController;
 
+    public GameObject oculusleftControllerModel;
+    public GameObject oculusRightControllerModel;
+    public GameObject viveLeftControllerModel;
+    public GameObject viveRightControllerModel;
+
     public XRRayInteractor setLeftHandRayInteractor;
     public XRRayInteractor setRightHandRayInteractor;
     
     public static XRRayInteractor leftHandRayInteractor;
     public static XRRayInteractor rightHandRayInteractor;
+
+    private MeshRenderer[] leftDescriptions;
+    private MeshRenderer[] rightDescriptions;
+
 
     private void OnEnable() {
         if (!DeviceLeft.isValid) {
@@ -42,6 +51,24 @@ public class MyInputManager : MonoBehaviour
 
         leftHandRayInteractor = setLeftHandRayInteractor;
         rightHandRayInteractor = setRightHandRayInteractor;
+        
+        #if UNITY_ANDROID
+        Instantiate(oculusleftControllerModel, leftHandController.position, leftHandController.rotation, leftHandController);
+        Instantiate(oculusRightControllerModel, rightHandController.position, rightHandController.rotation, rightHandController);
+        #else
+        Instantiate(viveLeftControllerModel, leftHandController.position, leftHandController.rotation, leftHandController);
+        Instantiate(viveRightControllerModel, rightHandController.position, rightHandController.rotation, rightHandController);
+        #endif
+
+        leftDescriptions = leftHandController.GetChild(0).GetChild(0).GetComponentsInChildren<MeshRenderer>();
+        for (int i = 0; i < leftDescriptions.Length; i++) {
+            leftDescriptions[i].enabled = false;
+        }
+
+        rightDescriptions = rightHandController.GetChild(0).GetChild(0).GetComponentsInChildren<MeshRenderer>();
+        for (int i = 0; i < rightDescriptions.Length; i++) {
+            rightDescriptions[i].enabled = false;
+        }
     }
 
     private void Update() {
@@ -59,6 +86,24 @@ public class MyInputManager : MonoBehaviour
         #if !UNITY_ANDROID 
             //Debug.Log("not on Android Platform");
         #endif
+
+        if (MyInputManager.GripValue('l') > 0) {
+            for (int i = 0; i < leftDescriptions.Length; i++) {
+                leftDescriptions[i].enabled = true;
+            }
+            for (int i = 0; i < rightDescriptions.Length; i++) {
+                rightDescriptions[i].enabled = true;
+            }
+        }
+        else {
+            for (int i = 0; i < leftDescriptions.Length; i++) {
+                leftDescriptions[i].enabled = false;
+            }
+
+            for (int i = 0; i < rightDescriptions.Length; i++) {
+                rightDescriptions[i].enabled = false;
+            }
+        }
     }
     
     public static char InRange(Vector3 input, float grabbingRange) {

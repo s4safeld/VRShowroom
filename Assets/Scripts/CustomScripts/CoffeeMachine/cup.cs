@@ -24,14 +24,6 @@ public class cup : MonoBehaviour {
             RaycastHit hit;
             if (Physics.Raycast(transform.position, Vector3.down, out hit,Mathf.Infinity)) {
                 CreateDecal(hit);
-
-                Debug.DrawRay(transform.position, Vector3.down * hit.distance
-                    , Color.yellow, 1000);
-                Debug.Log("Did Hit");
-            }
-            else {
-                Debug.DrawRay(transform.position, Vector3.down * 1000, Color.white, 1000);
-                Debug.Log("Did not Hit");
             }
         }
     }

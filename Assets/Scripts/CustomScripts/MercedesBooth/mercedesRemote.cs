@@ -5,7 +5,7 @@ using UnityEngine;
 public class mercedesRemote : MonoBehaviour
 {
 
-    private Remote remote;
+    private Tool remote;
     public GameObject device;
     public Transform[] transformsToExpand;
     public Vector3[] DestinationVector3s;
@@ -14,11 +14,12 @@ public class mercedesRemote : MonoBehaviour
     private bool expanded = false;
     private Vector2 primary2DAxis;
     private MercedesPodium mercedesPodium;
+    private bool rotationPaused = false;
     private bool disabled;
     
     // Start is called before the first frame update
     private void Start() {
-        remote = GetComponent<Remote>();
+        remote = GetComponent<Tool>();
         mercedesPodium = device.GetComponent<MercedesPodium>();
 
         _objectsToExpand = new ObjectToExpand[transformsToExpand.Length];
@@ -30,54 +31,61 @@ public class mercedesRemote : MonoBehaviour
     // Update is called once per frame
     private void Update() {
         if (disabled) return;
-        if (remote.grabbed &&(MyInputManager.Primary2DAxisClick('l') || MyInputManager.Primary2DAxisClick('r'))) {
-            if (remote.grabbed) {
+
+        #if UNITY_ANDROID
+        bool fire = MyInputManager.TriggerValue('r') > 0.5f;
+        #else
+        bool fire = MyInputManager.Primary2DAxisClick('r');
+        #endif
+        
+        if (remote.grabbed && fire) {
+            primary2DAxis = MyInputManager.Primary2DAxis(remote.currHandIndicator);
                 
-                primary2DAxis = MyInputManager.Primary2DAxis(remote.currHandIndicator);
+            //explode
+            if (primary2DAxis.y > 0 && primary2DAxis.x <= 0) {
+                if (!expanded) {
+                    expanded = true;
+                    foreach (var ote in _objectsToExpand) {
+                        ote.Transform.localPosition = ote.Destination;
+                    }
+                    audioSource.pitch = 1;
+                    audioSource.Play();
+                }
+                else {
+                    expanded = false;
+                    foreach (var ote in _objectsToExpand) {
+                        ote.Transform.localPosition = ote.Origin;
+                    }
+                    audioSource.pitch = -1;
+                    audioSource.Play();
+                }
+                StartCoroutine(WaitForMilliseconds(500));
+            }
+            //Pause Rotation
+            if (primary2DAxis.y > 0 && primary2DAxis.x > 0) {
+                mercedesPodium.rotate = !mercedesPodium.rotate;
+                rotationPaused = !rotationPaused;
+                StartCoroutine(WaitForMilliseconds(500));
+            }
+            //Rotate left
+            if (primary2DAxis.y < 0 && primary2DAxis.x <= 0) {
+                if (!rotationPaused)
+                    mercedesPodium.rotate = false;
+
+                device.transform.Rotate(new Vector3(0f, -mercedesPodium.rotationSpeed, 0f) * Time.deltaTime);
                 
-                //explode
-                if (primary2DAxis.y > 0 && primary2DAxis.x <= 0) {
-                    if (!expanded) {
-                        expanded = true;
-                        foreach (var ote in _objectsToExpand) {
-                            ote.Transform.localPosition = ote.Destination;
-                        }
-                        audioSource.pitch = 1;
-                        audioSource.Play();
-                    }
-                    else {
-                        expanded = false;
-                        foreach (var ote in _objectsToExpand) {
-                            ote.Transform.localPosition = ote.Origin;
-                        }
-                        audioSource.pitch = -1;
-                        audioSource.Play();
-                    }
-                    StartCoroutine(WaitForMilliseconds(500));
-                }
-                //Pause Rotation
-                if (primary2DAxis.y > 0 && primary2DAxis.x > 0) {
-                    mercedesPodium.rotate = !mercedesPodium.rotate;
-                    StartCoroutine(WaitForMilliseconds(500));
-                }
-                //Rotate left
-                if (primary2DAxis.y < 0 && primary2DAxis.x <= 0) {
-                    if (mercedesPodium.rotate) {
-                        device.transform.Rotate(new Vector3(0f, -mercedesPodium.rotationSpeed*2, 0f) * Time.deltaTime);
-                    }
-                    else {
-                        device.transform.Rotate(new Vector3(0f, -mercedesPodium.rotationSpeed, 0f) * Time.deltaTime);
-                    }
-                }
-                //Rotate right
-                if (primary2DAxis.y < 0 && primary2DAxis.x > 0) {
-                    if (mercedesPodium.rotate) {
-                        device.transform.Rotate(new Vector3(0f, mercedesPodium.rotationSpeed / 2, 0f) * Time.deltaTime);
-                    }
-                    else {
-                        device.transform.Rotate(new Vector3(0f, mercedesPodium.rotationSpeed, 0f) * Time.deltaTime); 
-                    }
-                }
+                if (!rotationPaused)
+                    mercedesPodium.rotate = true;
+            }
+            //Rotate right
+            if (primary2DAxis.y < 0 && primary2DAxis.x > 0) {
+                if (!rotationPaused)
+                    mercedesPodium.rotate = false;
+
+                device.transform.Rotate(new Vector3(0f, mercedesPodium.rotationSpeed, 0f) * Time.deltaTime);
+
+                if (!rotationPaused)
+                    mercedesPodium.rotate = true;
             }
         }
     }

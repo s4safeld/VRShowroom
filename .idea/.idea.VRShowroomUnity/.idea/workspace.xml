@@ -20,10 +20,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12403821-c4b7-4010-b31b-176f1288c8c7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/remotes/ViveController.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/remotes/ViveController.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/ViveController.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/ViveController.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/source.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/source.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/source/Controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/source/Controller/Controller.Obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/source/Controller/Controller.Obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/textures.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/textures/Controller_AO.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/textures/Controller_AO.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/textures/Controller_albedo.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/textures/Controller_albedo.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/textures/Controller_emissive.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/textures/Controller_emissive.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/textures/Controller_metalness.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/textures/Controller_metalness.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/textures/Controller_roughness.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/textures/Controller_roughness.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/textures/internal_ground_ao_texture.jpeg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/remotes/ViveController/textures/internal_ground_ao_texture.jpeg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/XRStuff/controller.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/XRStuff/controller.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/0.10.0-preview.6/Default Input Actions/XRI Default Input Actions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/0.10.0-preview.6/Default Input Actions/XRI Default Input Actions.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/CoffeeMachine/cup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/CoffeeMachine/cup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/mercedesRemote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/mercedesRemote.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Remote.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Remote.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Remote.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Remote.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/RobotBooth/RobotControlSphere.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/RobotBooth/RobotControlSphere.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/shiftscreen/shiftscreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/shiftscreen/shiftscreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/2.0/machine.config" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/2.0/machine.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/2.0/settings.map" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/2.0/settings.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/2.0/web.config" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/2.0/web.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.0/machine.config" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.0/machine.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.0/settings.map" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.0/settings.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.0/web.config" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.0/web.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.5/machine.config" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.5/machine.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.5/settings.map" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.5/settings.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.5/web.config" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/4.5/web.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/browscap.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/browscap.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/config" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/mconfig/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Build/MonoBleedingEdge/etc/mono/mconfig/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +84,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/XRInteractionManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/Interactables/XRGrabInteractable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Inputs/InputActionManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.10.0-preview.7/Runtime/Interaction/Controllers/ActionBasedController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -47,7 +97,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/PlayPauseButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/RotateObject.cs" />
         <option value="$PROJECT_DIR$/Assets/RobotControlSphere.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" />
         <option value="$PROJECT_DIR$/Assets/AspectChange.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/PageFlipper.cs" />
         <option value="$PROJECT_DIR$/Assets/paintApply.cs" />
@@ -55,13 +104,15 @@
         <option value="$PROJECT_DIR$/Assets/PaintFlipper.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Spline.cs" />
         <option value="$PROJECT_DIR$/Assets/shiftscreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/shiftscreen/shiftscreen.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/RobotBooth/RobotControlSphere.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/CoffeeMachine/cup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Floating.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VolvoBooth/PaintFlipper.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/mercedesRemote.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Remote.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/CoffeeMachine/cup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MercedesBooth/mercedesRemote.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/RobotBooth/RobotControlSphere.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/MyInputManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/Tool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/shiftscreen/shiftscreen.cs" />
       </list>
     </option>
   </component>
@@ -113,7 +164,11 @@
       <workItem from="1617795843969" duration="5035000" />
       <workItem from="1617974637775" duration="6721000" />
       <workItem from="1618480034884" duration="4859000" />
-      <workItem from="1619003043019" duration="2421000" />
+      <workItem from="1619003043019" duration="9894000" />
+      <workItem from="1619084770011" duration="5061000" />
+      <workItem from="1619177943514" duration="1448000" />
+      <workItem from="1619441548878" duration="944000" />
+      <workItem from="1619518965903" duration="3311000" />
     </task>
     <servers />
   </component>

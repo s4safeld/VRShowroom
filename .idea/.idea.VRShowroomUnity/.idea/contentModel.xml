@@ -42,7 +42,6 @@
               <e p="RotateObject.cs" t="Include" />
             </e>
             <e p="MyInputManager.cs" t="Include" />
-            <e p="Remote.cs" t="Include" />
             <e p="RobotBooth" t="Include">
               <e p="RobotControlSphere.cs" t="Include" />
             </e>
@@ -50,6 +49,7 @@
               <e p="shiftscreen.cs" t="Include" />
               <e p="Spline.cs" t="Include" />
             </e>
+            <e p="Tool.cs" t="Include" />
             <e p="TVBooth" t="Include">
               <e p="FastForwardButton.cs" t="Include" />
               <e p="MuteButton.cs" t="Include" />
