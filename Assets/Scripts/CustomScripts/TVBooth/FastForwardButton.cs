@@ -15,8 +15,7 @@ public class FastForwardButton : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (_tvButton.selected && !fastForwarding && (MyInputManager.TriggerValue('l')>0 ||
-                                                      MyInputManager.TriggerValue('r')>0)) {
+        if (_tvButton.selected && !fastForwarding && MyInputManager.TriggerButtonPressed('l')) {
             fastForwarding = true;
             _vp.playbackSpeed = 10;
         }

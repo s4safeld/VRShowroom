@@ -33,7 +33,7 @@ public class cup : MonoBehaviour {
         
         decal.transform.forward = hit.normal * -1f;
         decal.transform.position = hit.point;
-        decal.transform.Translate(Vector3.forward * -0.001f);
+        decal.transform.Translate(Vector3.forward * -0.00001f);
         decal.transform.Rotate(Vector3.forward, Random.Range(-360,360));
     }
 }

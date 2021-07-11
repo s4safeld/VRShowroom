@@ -19,8 +19,7 @@ public class RobotControlSphere : MonoBehaviour {
 
     private float triggerValueOfPreviousFrame = 0;
     private Outline outline;
-
-
+    
     private void Start() {
         outline = GetComponent<Outline>();
 
@@ -31,15 +30,16 @@ public class RobotControlSphere : MonoBehaviour {
             clawsRotationOrigins[i] = claws[i].localEulerAngles;
         }
     }
-
+    
     void Update() {
         if (transform.localPosition.x > 3 || transform.localPosition.y > 3 || transform.localPosition.z > 3 ||
             transform.localPosition.x < -3 || transform.localPosition.y < -3 || transform.localPosition.z < -3)
             transform.localPosition = Vector3.up;
         
-        var position = new Vector3(transform.position.x+7.96f, transform.position.y-5.57f, transform.position.z-1.18f);
-        
-        target.localPosition = new Vector3(position.x*3, position.y, -position.z*3);
+        var position = new Vector3(transform.position.x- 7.829586f, transform.position.y- 0.9757428f, transform.position.z+
+            3.546846f);
+        //var position = transform.parent.localPosition;
+        target.localPosition = new Vector3(position.x*3*1.7f, position.y*1.7f, -position.z*3*1.7f);
         target.localEulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z);
 
         handIndicator = MyInputManager.InRange(transform.position, 0.5f);

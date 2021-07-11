@@ -9,8 +9,6 @@ public class MuteButton : MonoBehaviour {
     private bool muteToggle = false;
     private bool muted = false;
 
-    public bool listenForTrigger;
-    
     // Start is called before the first frame update
     void Start() {
         _tvButton = GetComponent<TVButton>();
@@ -19,12 +17,15 @@ public class MuteButton : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (_tvButton.selected && !muteToggle) {
-            muteToggle = true;
-            _vp.SetDirectAudioMute(0,muted = !muted);
-        }
-        if(!_tvButton.selected && muteToggle){
-            muteToggle = false;
+        if (MyInputManager.TriggerButtonPressed('l')) {
+            if (_tvButton.selected && !muteToggle) {
+                muteToggle = true;
+                _vp.SetDirectAudioMute(0, muted = !muted);
+            }
+
+            if (!_tvButton.selected && muteToggle) {
+                muteToggle = false;
+            }
         }
     }
 

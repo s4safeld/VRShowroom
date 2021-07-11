@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class VIPArea : MonoBehaviour {
     public TeleportationArea[] tpAreas;
     public string passCode;
     public GameObject[] barriers;
+    public Light[] lights;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,10 @@ public class VIPArea : MonoBehaviour {
             }
             foreach (var barrier in barriers) {
                 barrier.SetActive(false);
+            }
+
+            foreach (var light in lights) {
+                light.enabled = true;
             }
         }
     }

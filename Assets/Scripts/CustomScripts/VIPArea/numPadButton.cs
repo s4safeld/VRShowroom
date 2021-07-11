@@ -23,7 +23,7 @@ public class numPadButton : MonoBehaviour
     void Update()
     {
         if (_tvButton.selected 
-            && (MyInputManager.TriggerButtonPressed('l') || MyInputManager.TriggerButtonPressed('r')) 
+            && MyInputManager.TriggerButtonPressed(_tvButton.handIndicator) 
             && !isSelected) {
             
             isSelected = true;
