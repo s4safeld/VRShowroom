@@ -20,28 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12403821-c4b7-4010-b31b-176f1288c8c7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VRShowroomUnity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/splash2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/splash2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Booths/_MercedesBooth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Booths/_MercedesBooth.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Booths/_RobotBooth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Booths/_RobotBooth.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Booths/_StartingBooth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Booths/_StartingBooth.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Booths/_TVBooth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Booths/_TVBooth.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Booths/_VolvoBooth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Booths/_VolvoBooth.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Room.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Room.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/semiTransparentScreen/bejoyntLogo3_transparent.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/semiTransparentScreen/bejoyntLogo3_transparent.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/semiTransparentScreen/screen.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/semiTransparentScreen/screen.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/LightingData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/LightingData.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/ReflectionProbe-0.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/CoffeeMachine/cup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/CoffeeMachine/cup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/RobotBooth/RobotControlSphere.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/RobotBooth/RobotControlSphere.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/FastForwardButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/FastForwardButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/MuteButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/MuteButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/PlayPauseButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVBooth/PlayPauseButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VIPArea/VIPArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VIPArea/VIPArea.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VIPArea/numPadButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VIPArea/numPadButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +69,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/TVButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/VIPArea/numPadButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomScripts/RobotBooth/RobotControlSphere.cs" />
+        <option value="$PROJECT_DIR$/Assets/Models/semiTransparentScreen/NewBehaviourScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Models/semiTransparentScreen/Scroll.cs" />
       </list>
     </option>
   </component>
@@ -154,6 +140,7 @@
       <workItem from="1625750146005" duration="2062000" />
       <workItem from="1625915797313" duration="1716000" />
       <workItem from="1626009827783" duration="1181000" />
+      <workItem from="1626541278073" duration="3766000" />
     </task>
     <servers />
   </component>
